@@ -1,0 +1,11 @@
+1792914404.4928119 [INFO] [launch]: All log files can be found below /home/mavrick13/.ros/log/2026-10-25-13-16-44-490783-PARADOX-29974
+1792914404.4929428 [INFO] [launch]: Default logging verbosity is set to INFO
+1792914405.4898863 [INFO] [gzserver-1]: process started with pid [29975]
+1792914405.4901278 [INFO] [gzclient-2]: process started with pid [29977]
+1792914405.4902406 [INFO] [robot_state_publisher-3]: process started with pid [29979]
+1792914405.4903324 [INFO] [spawn_entity.py-4]: process started with pid [29981]
+1792914439.0503924 [ERROR] [spawn_entity.py-4]: process has died [pid 29981, exit code 1, cmd '/opt/ros/humble/lib/gazebo_ros/spawn_entity.py -entity waffle -file /opt/ros/humble/share/turtlebot3_gazebo/models/turtlebot3_waffle/model.sdf -x -2.0 -y -0.5 -z 0.01 --ros-args'].
+1792915009.5849748 [WARNING] [launch]: user interrupted with ctrl-c (SIGINT)
+1792915009.7064307 [INFO] [robot_state_publisher-3]: process has finished cleanly [pid 29979]
+1792915009.7877769 [INFO] [gzclient-2]: process has finished cleanly [pid 29977]
+1792915009.8259721 [INFO] [gzserver-1]: process has finished cleanly [pid 29975]

@@ -1,0 +1,42 @@
+Gazebo multi-robot simulator, version 11.10.2
+Copyright (C) 2012 Open Source Robotics Foundation.
+Released under the Apache 2 License.
+http://gazebosim.org
+
+
+(1792915039 368183874) [Wrn] [gazebo_ros_init.cpp:178] 
+#     # ####### ####### ###  #####  #######
+##    # #     #    #     #  #     # #
+# #   # #     #    #     #  #       #
+#  #  # #     #    #     #  #       #####
+#   # # #     #    #     #  #       #
+#    ## #     #    #     #  #     # #
+#     # #######    #    ###  #####  #######
+
+This version of Gazebo, now called Gazebo classic, reaches end-of-life
+in January 2025. Users are highly encouraged to migrate to the new Gazebo
+using our migration guides (https://gazebosim.org/docs/latest/gazebo_classic_migration?utm_source=gazebo_ros_pkgs&utm_medium=cli)
+
+
+(1792915039 399510265) [Msg] Waiting for master.
+(1792915039 409641888) [Msg] Connected to gazebo master @ http://127.0.0.1:11345
+(1792915039 409671966) [Msg] Publicized address: 10.255.255.254
+(1792915040 443143446) [Msg] Loading world file [/opt/ros/humble/share/turtlebot3_gazebo/worlds/turtlebot3_world.world]
+(1792915040 519370884) Init world[default]
+(1792915040 759673685) applying Gaussian noise model with mean 0, stddev 0.0002, bias 0
+(1792915040 759694441) applying Gaussian noise model with mean 0, stddev 0.0002, bias 0
+(1792915040 759710292) applying Gaussian noise model with mean 0, stddev 0.0002, bias 0
+(1792915040 759724977) Applying angular velocity noise to IMU[tb3_imu].
+  X: Gaussian noise, mean[0], stdDev[0.0002] bias[0] dynamicBiasStdDev[0] dynamicBiasCorrTime[0] precision[0] quantized[0]
+  Y: Gaussian noise, mean[0], stdDev[0.0002] bias[0] dynamicBiasStdDev[0] dynamicBiasCorrTime[0] precision[0] quantized[0]
+  Z: Gaussian noise, mean[0], stdDev[0.0002] bias[0] dynamicBiasStdDev[0] dynamicBiasCorrTime[0] precision[0] quantized[0]
+(1792915040 759733537) applying Gaussian noise model with mean 0, stddev 0.017, bias 0
+(1792915040 759748975) applying Gaussian noise model with mean 0, stddev 0.017, bias 0
+(1792915040 759764166) applying Gaussian noise model with mean 0, stddev 0.017, bias 0
+(1792915040 759778722) Applying linear acceleration noise to IMU[tb3_imu].
+  X: Gaussian noise, mean[0], stdDev[0.017] bias[0] dynamicBiasStdDev[0] dynamicBiasCorrTime[0] precision[0] quantized[0]
+  Y: Gaussian noise, mean[0], stdDev[0.017] bias[0] dynamicBiasStdDev[0] dynamicBiasCorrTime[0] precision[0] quantized[0]
+  Z: Gaussian noise, mean[0], stdDev[0.017] bias[0] dynamicBiasStdDev[0] dynamicBiasCorrTime[0] precision[0] quantized[0]
+(1792915040 844427161) applying Gaussian noise model with mean 0, stddev 0.01, bias 0
+(1792915041 452688023) applying Gaussian noise model with mean 0, stddev 0.007, bias 0
+(1792915331 87811255) [Wrn] [Publisher.cc:135] Queue limit reached for topic /gazebo/default/pose/local/info, deleting message. This warning is printed only once.

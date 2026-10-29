@@ -1,0 +1,19 @@
+1792915053.9273865 [INFO] [launch]: All log files can be found below /home/mavrick13/.ros/log/2026-10-25-13-27-33-917229-PARADOX-31190
+1792915053.9276769 [INFO] [launch]: Default logging verbosity is set to INFO
+1792915054.5016024 [INFO] [component_container_isolated-1]: process started with pid [31207]
+1792915054.5019002 [INFO] [rviz2-2]: process started with pid [31209]
+1792915054.5753875 [INFO] [launch_ros.actions.load_composable_nodes]: Loaded node '/map_server' in container '/nav2_container'
+1792915054.5964200 [INFO] [launch_ros.actions.load_composable_nodes]: Loaded node '/amcl' in container '/nav2_container'
+1792915054.6154010 [INFO] [launch_ros.actions.load_composable_nodes]: Loaded node '/lifecycle_manager_localization' in container '/nav2_container'
+1792915054.8003392 [INFO] [launch_ros.actions.load_composable_nodes]: Loaded node '/controller_server' in container '/nav2_container'
+1792915054.8295696 [INFO] [launch_ros.actions.load_composable_nodes]: Loaded node '/smoother_server' in container '/nav2_container'
+1792915054.8761735 [INFO] [launch_ros.actions.load_composable_nodes]: Loaded node '/planner_server' in container '/nav2_container'
+1792915054.9075787 [INFO] [launch_ros.actions.load_composable_nodes]: Loaded node '/behavior_server' in container '/nav2_container'
+1792915054.9365661 [INFO] [launch_ros.actions.load_composable_nodes]: Loaded node '/bt_navigator' in container '/nav2_container'
+1792915054.9661222 [INFO] [launch_ros.actions.load_composable_nodes]: Loaded node '/waypoint_follower' in container '/nav2_container'
+1792915054.9963715 [INFO] [launch_ros.actions.load_composable_nodes]: Loaded node '/velocity_smoother' in container '/nav2_container'
+1792915055.0259926 [INFO] [launch_ros.actions.load_composable_nodes]: Loaded node '/lifecycle_manager_navigation' in container '/nav2_container'
+1792915722.1981919 [WARNING] [launch]: user interrupted with ctrl-c (SIGINT)
+1792915722.8568254 [ERROR] [rviz2-2]: process has died [pid 31209, exit code -11, cmd '/opt/ros/humble/lib/rviz2/rviz2 -d /opt/ros/humble/share/turtlebot3_navigation2/rviz/tb3_navigation2.rviz --ros-args -r __node:=rviz2 --params-file /tmp/launch_params_r5vwk36k'].
+1792915727.5437632 [ERROR] [component_container_isolated-1]: process[component_container_isolated-1] failed to terminate '5' seconds after receiving 'SIGINT', escalating to 'SIGTERM'
+1792915727.5443332 [INFO] [component_container_isolated-1]: sending signal 'SIGTERM' to process[component_container_isolated-1]

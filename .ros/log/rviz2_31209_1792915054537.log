@@ -1,0 +1,38 @@
+[INFO] [1792915055.819861360] [rviz2]: Stereo is NOT SUPPORTED
+[INFO] [1792915055.820105324] [rviz2]: OpenGl version: 4.2 (GLSL 4.2)
+[INFO] [1792915055.868126176] [rviz2]: Stereo is NOT SUPPORTED
+[ERROR] [1792915056.064482054] [rviz2]: PluginlibFactory: The plugin for class 'nav2_rviz_plugins/Selector' failed to load. Error: According to the loaded plugin descriptions the class nav2_rviz_plugins/Selector with base class type rviz_common::Panel does not exist. Declared types are  nav2_rviz_plugins/Navigation 2 slam_toolbox::SlamToolboxPlugin
+[ERROR] [1792915056.065028889] [rviz2]: PluginlibFactory: The plugin for class 'nav2_rviz_plugins/Docking' failed to load. Error: According to the loaded plugin descriptions the class nav2_rviz_plugins/Docking with base class type rviz_common::Panel does not exist. Declared types are  nav2_rviz_plugins/Navigation 2 slam_toolbox::SlamToolboxPlugin
+[INFO] [1792915056.146162152] [rviz2]: Trying to create a map of size 384 x 384 using 1 swatches
+[ERROR] [1792915056.164705591] [rviz2]: Vertex Program:rviz/glsl120/indexed_8bit_image.vert Fragment Program:rviz/glsl120/indexed_8bit_image.frag GLSL link result : 
+active samplers with a different type refer to the same texture image unit
+[INFO] [1792915058.065210267] [rviz2]: Message Filter dropping message: frame 'base_scan' at time 14.558 for reason 'discarding message because the queue is full'
+[INFO] [1792915058.065363337] [rviz2]: Message Filter dropping message: frame 'odom' at time 14.540 for reason 'discarding message because the queue is full'
+[INFO] [1792915063.610937596] [rviz2]: Message Filter dropping message: frame 'odom' at time 17.124 for reason 'discarding message because the queue is full'
+[INFO] [1792915063.643138437] [rviz2]: Message Filter dropping message: frame 'base_scan' at time 17.158 for reason 'discarding message because the queue is full'
+[INFO] [1792915065.211276154] [rviz2]: Message Filter dropping message: frame 'odom' at time 14.700 for reason 'discarding message because the queue is full'
+[INFO] [1792915066.203284296] [rviz2]: Message Filter dropping message: frame 'odom' at time 19.708 for reason 'discarding message because the queue is full'
+[INFO] [1792915066.266953023] [rviz2]: Message Filter dropping message: frame 'base_scan' at time 19.758 for reason 'discarding message because the queue is full'
+[INFO] [1792915068.219901407] [rviz2]: Message Filter dropping message: frame 'odom' at time 17.700 for reason 'discarding message because the queue is full'
+[INFO] [1792915068.828260383] [rviz2]: Message Filter dropping message: frame 'odom' at time 22.292 for reason 'discarding message because the queue is full'
+[INFO] [1792915068.859895563] [rviz2]: Message Filter dropping message: frame 'base_scan' at time 22.358 for reason 'discarding message because the queue is full'
+[INFO] [1792915069.358519663] [rviz2]: Setting estimate pose: Frame:map, Position(0.00886679, 0.0044015, 0), Orientation(0, 0, 0.00227523, 0.999997) = Angle: 0.00455047
+[INFO] [1792915070.636581002] [rviz2]: Trying to create a map of size 60 x 60 using 1 swatches
+[INFO] [1792915071.825960272] [rviz2]: Trying to create a map of size 384 x 384 using 1 swatches
+[INFO] [1792915074.296061597] [rviz2]: Message Filter dropping message: frame 'odom' at time 20.700 for reason 'the timestamp on the message is earlier than all the data in the transform cache'
+[INFO] [1792915076.697257971] [rviz_navigation_dialog_action_client]: NavigateToPose will be called using the BT Navigator's default behavior tree.
+[INFO] [1792915077.312192254] [rviz2]: Message Filter dropping message: frame 'odom' at time 23.700 for reason 'the timestamp on the message is earlier than all the data in the transform cache'
+[INFO] [1792915077.927604876] [rviz2]: Message Filter dropping message: frame 'odom' at time 24.298 for reason 'the timestamp on the message is earlier than all the data in the transform cache'
+[INFO] [1792915078.754607256] [rviz2]: Message Filter dropping message: frame 'base_scan' at time 24.158 for reason 'the timestamp on the message is earlier than all the data in the transform cache'
+[INFO] [1792915183.654548883] [rviz_navigation_dialog_action_client]: NavigateToPose will be called using the BT Navigator's default behavior tree.
+[INFO] [1792915191.503277929] [rviz_navigation_dialog_action_client]: NavigateToPose will be called using the BT Navigator's default behavior tree.
+[INFO] [1792915229.467136326] [rviz_navigation_dialog_action_client]: NavigateToPose will be called using the BT Navigator's default behavior tree.
+[INFO] [1792915279.299178807] [rviz_navigation_dialog_action_client]: NavigateToPose will be called using the BT Navigator's default behavior tree.
+[INFO] [1792915395.211553016] [rviz_navigation_dialog_action_client]: NavigateToPose will be called using the BT Navigator's default behavior tree.
+[INFO] [1792915427.566290361] [rviz_navigation_dialog_action_client]: NavigateToPose will be called using the BT Navigator's default behavior tree.
+[INFO] [1792915445.625392760] [rviz_navigation_dialog_action_client]: NavigateToPose will be called using the BT Navigator's default behavior tree.
+[INFO] [1792915452.310481611] [rviz_navigation_dialog_action_client]: NavigateToPose will be called using the BT Navigator's default behavior tree.
+[INFO] [1792915465.426060599] [rviz_navigation_dialog_action_client]: NavigateToPose will be called using the BT Navigator's default behavior tree.
+[INFO] [1792915479.176129206] [rviz_navigation_dialog_action_client]: NavigateToPose will be called using the BT Navigator's default behavior tree.
+[INFO] [1792915489.084485293] [rviz_navigation_dialog_action_client]: NavigateToPose will be called using the BT Navigator's default behavior tree.
+[INFO] [1792915722.197889585] [rclcpp]: signal_handler(SIGINT/SIGTERM)

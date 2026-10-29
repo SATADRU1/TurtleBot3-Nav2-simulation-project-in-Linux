@@ -1,0 +1,15 @@
+[INFO] [1792914444.752547659] [rviz2]: Stereo is NOT SUPPORTED
+[INFO] [1792914444.752751471] [rviz2]: OpenGl version: 4.2 (GLSL 4.2)
+[INFO] [1792914444.806830718] [rviz2]: Stereo is NOT SUPPORTED
+[ERROR] [1792914444.991285323] [rviz2]: PluginlibFactory: The plugin for class 'nav2_rviz_plugins/Selector' failed to load. Error: According to the loaded plugin descriptions the class nav2_rviz_plugins/Selector with base class type rviz_common::Panel does not exist. Declared types are  nav2_rviz_plugins/Navigation 2 slam_toolbox::SlamToolboxPlugin
+[ERROR] [1792914444.991835437] [rviz2]: PluginlibFactory: The plugin for class 'nav2_rviz_plugins/Docking' failed to load. Error: According to the loaded plugin descriptions the class nav2_rviz_plugins/Docking with base class type rviz_common::Panel does not exist. Declared types are  nav2_rviz_plugins/Navigation 2 slam_toolbox::SlamToolboxPlugin
+[INFO] [1792914445.061985712] [rviz2]: Trying to create a map of size 384 x 384 using 1 swatches
+[ERROR] [1792914445.075187407] [rviz2]: Vertex Program:rviz/glsl120/indexed_8bit_image.vert Fragment Program:rviz/glsl120/indexed_8bit_image.frag GLSL link result : 
+active samplers with a different type refer to the same texture image unit
+[INFO] [1792914802.894993805] [rviz2]: Setting estimate pose: Frame:map, Position(1.20139, -1.07338, 0), Orientation(0, 0, -0.0244151, 0.999702) = Angle: -0.0488351
+[INFO] [1792914814.818710501] [rviz2]: Setting estimate pose: Frame:map, Position(0.135065, 0.0247864, 0), Orientation(0, 0, -0.0103379, 0.999947) = Angle: -0.0206761
+[INFO] [1792914850.183577923] [rviz_navigation_dialog_action_client]: NavigateToPose will be called using the BT Navigator's default behavior tree.
+[ERROR] [1792914850.184510304] [rviz_navigation_dialog_action_client]: Goal was rejected by server
+[INFO] [1792914855.066319104] [rviz_navigation_dialog_action_client]: NavigateToPose will be called using the BT Navigator's default behavior tree.
+[ERROR] [1792914855.066930971] [rviz_navigation_dialog_action_client]: Goal was rejected by server
+[INFO] [1792914995.526426356] [rclcpp]: signal_handler(SIGINT/SIGTERM)

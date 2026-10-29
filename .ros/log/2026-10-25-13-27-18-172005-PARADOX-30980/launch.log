@@ -1,0 +1,20 @@
+1792915038.1732259 [INFO] [launch]: All log files can be found below /home/mavrick13/.ros/log/2026-10-25-13-27-18-172005-PARADOX-30980
+1792915038.1733706 [INFO] [launch]: Default logging verbosity is set to INFO
+1792915039.0378952 [INFO] [gzserver-1]: process started with pid [30981]
+1792915039.0380771 [INFO] [gzclient-2]: process started with pid [30983]
+1792915039.0381579 [INFO] [robot_state_publisher-3]: process started with pid [30985]
+1792915039.0382321 [INFO] [spawn_entity.py-4]: process started with pid [30987]
+1792915040.7791135 [gzserver-1] [INFO] [1792915040.778751780] [turtlebot3_imu]: <initial_orientation_as_reference> is unset, using default value of false to comply with REP 145 (world as orientation reference)
+1792915041.0075321 [INFO] [spawn_entity.py-4]: process has finished cleanly [pid 30987]
+1792915041.5252953 [gzserver-1] [INFO] [1792915041.524890860] [camera_driver]: Publishing camera info to [/camera/camera_info]
+1792915041.5772617 [gzserver-1] [INFO] [1792915041.576871480] [turtlebot3_diff_drive]: Wheel pair 1 separation set to [0.287000m]
+1792915041.5774961 [gzserver-1] [INFO] [1792915041.576945797] [turtlebot3_diff_drive]: Wheel pair 1 diameter set to [0.066000m]
+1792915041.5793555 [gzserver-1] [INFO] [1792915041.579029918] [turtlebot3_diff_drive]: Subscribed to [/cmd_vel]
+1792915041.5813334 [gzserver-1] [INFO] [1792915041.581155642] [turtlebot3_diff_drive]: Advertise odometry on [/odom]
+1792915041.5835123 [gzserver-1] [INFO] [1792915041.583366356] [turtlebot3_diff_drive]: Publishing odom transforms between [odom] and [base_footprint]
+1792915041.5945623 [gzserver-1] [INFO] [1792915041.594159354] [turtlebot3_joint_state]: Going to publish joint [wheel_left_joint]
+1792915041.5947909 [gzserver-1] [INFO] [1792915041.594238731] [turtlebot3_joint_state]: Going to publish joint [wheel_right_joint]
+1792915716.8741117 [WARNING] [launch]: user interrupted with ctrl-c (SIGINT)
+1792915716.9918606 [INFO] [robot_state_publisher-3]: process has finished cleanly [pid 30985]
+1792915717.1718743 [INFO] [gzserver-1]: process has finished cleanly [pid 30981]
+1792915717.2041323 [INFO] [gzclient-2]: process has finished cleanly [pid 30983]

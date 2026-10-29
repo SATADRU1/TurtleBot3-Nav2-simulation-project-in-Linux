@@ -1,0 +1,6 @@
+[INFO] [1792914405.961313903] [spawn_entity]: Spawn Entity started
+[INFO] [1792914405.961656990] [spawn_entity]: Loading entity XML from file /opt/ros/humble/share/turtlebot3_gazebo/models/turtlebot3_waffle/model.sdf
+[INFO] [1792914405.962747487] [spawn_entity]: Waiting for service /spawn_entity, timeout = 30
+[INFO] [1792914405.963178860] [spawn_entity]: Waiting for service /spawn_entity
+[ERROR] [1792914438.910871967] [spawn_entity]: Service /spawn_entity unavailable. Was Gazebo started with GazeboRosFactory?
+[ERROR] [1792914438.911282052] [spawn_entity]: Spawn service failed. Exiting.

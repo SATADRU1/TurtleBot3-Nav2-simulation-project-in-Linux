@@ -1,0 +1,733 @@
+[INFO] [1792915054.544607870] [nav2_container]: Load Library: /opt/ros/humble/lib/libmap_server_core.so
+[INFO] [1792915054.560477478] [nav2_container]: Found class: rclcpp_components::NodeFactoryTemplate<nav2_map_server::CostmapFilterInfoServer>
+[INFO] [1792915054.560528385] [nav2_container]: Found class: rclcpp_components::NodeFactoryTemplate<nav2_map_server::MapSaver>
+[INFO] [1792915054.560533960] [nav2_container]: Found class: rclcpp_components::NodeFactoryTemplate<nav2_map_server::MapServer>
+[INFO] [1792915054.560538139] [nav2_container]: Instantiate class: rclcpp_components::NodeFactoryTemplate<nav2_map_server::MapServer>
+[INFO] [1792915054.573519756] [map_server]: 
+	map_server lifecycle node launched. 
+	Waiting on external lifecycle transitions to activate
+	See https://design.ros2.org/articles/node_lifecycle.html for more information.
+[INFO] [1792915054.573651354] [map_server]: Creating
+[INFO] [1792915054.576800867] [nav2_container]: Load Library: /opt/ros/humble/lib/libamcl_core.so
+[INFO] [1792915054.579536999] [nav2_container]: Found class: rclcpp_components::NodeFactoryTemplate<nav2_amcl::AmclNode>
+[INFO] [1792915054.579595391] [nav2_container]: Instantiate class: rclcpp_components::NodeFactoryTemplate<nav2_amcl::AmclNode>
+[INFO] [1792915054.590940238] [amcl]: 
+	amcl lifecycle node launched. 
+	Waiting on external lifecycle transitions to activate
+	See https://design.ros2.org/articles/node_lifecycle.html for more information.
+[INFO] [1792915054.591256141] [amcl]: Creating
+[INFO] [1792915054.597292109] [nav2_container]: Load Library: /opt/ros/humble/lib/libnav2_lifecycle_manager_core.so
+[INFO] [1792915054.597985999] [nav2_container]: Found class: rclcpp_components::NodeFactoryTemplate<nav2_lifecycle_manager::LifecycleManager>
+[INFO] [1792915054.598029550] [nav2_container]: Instantiate class: rclcpp_components::NodeFactoryTemplate<nav2_lifecycle_manager::LifecycleManager>
+[INFO] [1792915054.608202770] [lifecycle_manager_localization]: Creating
+[INFO] [1792915054.612899593] [lifecycle_manager_localization]: [34m[1mCreating and initializing lifecycle service clients[0m[0m
+[INFO] [1792915054.618979975] [lifecycle_manager_localization]: [34m[1mStarting managed nodes bringup...[0m[0m
+[INFO] [1792915054.619093315] [lifecycle_manager_localization]: [34m[1mConfiguring map_server[0m[0m
+[INFO] [1792915054.619480322] [map_server]: Configuring
+[INFO] [1792915054.619602010] [map_io]: Loading yaml file: /opt/ros/humble/share/turtlebot3_navigation2/map/map.yaml
+[INFO] [1792915054.620070331] [map_io]: resolution: 0.05
+[INFO] [1792915054.620083694] [map_io]: origin[0]: -10
+[INFO] [1792915054.620089535] [map_io]: origin[1]: -10
+[INFO] [1792915054.620094329] [map_io]: origin[2]: 0
+[INFO] [1792915054.620099343] [map_io]: free_thresh: 0.196
+[INFO] [1792915054.620104514] [map_io]: occupied_thresh: 0.65
+[INFO] [1792915054.620111172] [map_io]: mode: trinary
+[INFO] [1792915054.620118795] [map_io]: negate: 0
+[INFO] [1792915054.620522580] [map_io]: Loading image_file: /opt/ros/humble/share/turtlebot3_navigation2/map/map.pgm
+[INFO] [1792915054.631760621] [map_io]: Read map /opt/ros/humble/share/turtlebot3_navigation2/map/map.pgm: 384 X 384 map @ 0.05 m/cell
+[INFO] [1792915054.635725290] [lifecycle_manager_localization]: [34m[1mConfiguring amcl[0m[0m
+[INFO] [1792915054.635874154] [amcl]: Configuring
+[INFO] [1792915054.635947442] [amcl]: initTransforms
+[INFO] [1792915054.646902262] [amcl]: initPubSub
+[INFO] [1792915054.653373682] [amcl]: Subscribed to map topic.
+[INFO] [1792915054.656898587] [lifecycle_manager_localization]: [34m[1mActivating map_server[0m[0m
+[INFO] [1792915054.657066495] [map_server]: Activating
+[INFO] [1792915054.657430026] [map_server]: Creating bond (map_server) to lifecycle manager.
+[INFO] [1792915054.657722366] [amcl]: Received a 384 X 384 map @ 0.050 m/pix
+[INFO] [1792915054.750315855] [nav2_container]: Load Library: /opt/ros/humble/lib/libcontroller_server_core.so
+[INFO] [1792915054.752452490] [nav2_container]: Found class: rclcpp_components::NodeFactoryTemplate<nav2_controller::ControllerServer>
+[INFO] [1792915054.752499724] [nav2_container]: Instantiate class: rclcpp_components::NodeFactoryTemplate<nav2_controller::ControllerServer>
+[INFO] [1792915054.760999775] [lifecycle_manager_localization]: Server map_server connected with bond.
+[INFO] [1792915054.761045016] [lifecycle_manager_localization]: [34m[1mActivating amcl[0m[0m
+[INFO] [1792915054.761155978] [amcl]: Activating
+[INFO] [1792915054.761186221] [amcl]: Creating bond (amcl) to lifecycle manager.
+[INFO] [1792915054.763168390] [controller_server]: 
+	controller_server lifecycle node launched. 
+	Waiting on external lifecycle transitions to activate
+	See https://design.ros2.org/articles/node_lifecycle.html for more information.
+[INFO] [1792915054.766225749] [controller_server]: Creating controller server
+[INFO] [1792915054.794817437] [local_costmap.local_costmap]: 
+	local_costmap lifecycle node launched. 
+	Waiting on external lifecycle transitions to activate
+	See https://design.ros2.org/articles/node_lifecycle.html for more information.
+[INFO] [1792915054.795509214] [local_costmap.local_costmap]: Creating Costmap
+[INFO] [1792915054.802333777] [nav2_container]: Load Library: /opt/ros/humble/lib/libsmoother_server_core.so
+[INFO] [1792915054.804886016] [nav2_container]: Found class: rclcpp_components::NodeFactoryTemplate<nav2_smoother::SmootherServer>
+[INFO] [1792915054.804978977] [nav2_container]: Instantiate class: rclcpp_components::NodeFactoryTemplate<nav2_smoother::SmootherServer>
+[INFO] [1792915054.826431474] [smoother_server]: 
+	smoother_server lifecycle node launched. 
+	Waiting on external lifecycle transitions to activate
+	See https://design.ros2.org/articles/node_lifecycle.html for more information.
+[INFO] [1792915054.827576868] [smoother_server]: Creating smoother server
+[INFO] [1792915054.830483786] [nav2_container]: Load Library: /opt/ros/humble/lib/libplanner_server_core.so
+[INFO] [1792915054.831219013] [nav2_container]: Found class: rclcpp_components::NodeFactoryTemplate<nav2_planner::PlannerServer>
+[INFO] [1792915054.831255758] [nav2_container]: Instantiate class: rclcpp_components::NodeFactoryTemplate<nav2_planner::PlannerServer>
+[INFO] [1792915054.849604520] [planner_server]: 
+	planner_server lifecycle node launched. 
+	Waiting on external lifecycle transitions to activate
+	See https://design.ros2.org/articles/node_lifecycle.html for more information.
+[INFO] [1792915054.851052087] [planner_server]: Creating
+[INFO] [1792915054.858853641] [amcl]: createLaserObject
+[INFO] [1792915054.865716998] [lifecycle_manager_localization]: Server amcl connected with bond.
+[INFO] [1792915054.865792629] [lifecycle_manager_localization]: [34m[1mManaged nodes are active[0m[0m
+[INFO] [1792915054.865812889] [lifecycle_manager_localization]: [34m[1mCreating bond timer...[0m[0m
+[WARN] [1792915054.869038199] [amcl]: AMCL cannot publish a pose or update the transform. Please set the initial pose...
+[INFO] [1792915054.869459461] [global_costmap.global_costmap]: 
+	global_costmap lifecycle node launched. 
+	Waiting on external lifecycle transitions to activate
+	See https://design.ros2.org/articles/node_lifecycle.html for more information.
+[INFO] [1792915054.869720792] [global_costmap.global_costmap]: Creating Costmap
+[INFO] [1792915054.877601076] [nav2_container]: Load Library: /opt/ros/humble/lib/libbehavior_server_core.so
+[INFO] [1792915054.882164048] [nav2_container]: Found class: rclcpp_components::NodeFactoryTemplate<behavior_server::BehaviorServer>
+[INFO] [1792915054.882259700] [nav2_container]: Instantiate class: rclcpp_components::NodeFactoryTemplate<behavior_server::BehaviorServer>
+[INFO] [1792915054.902532518] [behavior_server]: 
+	behavior_server lifecycle node launched. 
+	Waiting on external lifecycle transitions to activate
+	See https://design.ros2.org/articles/node_lifecycle.html for more information.
+[INFO] [1792915054.908830600] [nav2_container]: Load Library: /opt/ros/humble/lib/libbt_navigator_core.so
+[INFO] [1792915054.910518567] [nav2_container]: Found class: rclcpp_components::NodeFactoryTemplate<nav2_bt_navigator::BtNavigator>
+[INFO] [1792915054.910586593] [nav2_container]: Instantiate class: rclcpp_components::NodeFactoryTemplate<nav2_bt_navigator::BtNavigator>
+[INFO] [1792915054.935236819] [bt_navigator]: 
+	bt_navigator lifecycle node launched. 
+	Waiting on external lifecycle transitions to activate
+	See https://design.ros2.org/articles/node_lifecycle.html for more information.
+[INFO] [1792915054.935309777] [bt_navigator]: Creating
+[INFO] [1792915054.937857586] [nav2_container]: Load Library: /opt/ros/humble/lib/libwaypoint_follower_core.so
+[INFO] [1792915054.938833085] [nav2_container]: Found class: rclcpp_components::NodeFactoryTemplate<nav2_waypoint_follower::WaypointFollower>
+[INFO] [1792915054.938879106] [nav2_container]: Instantiate class: rclcpp_components::NodeFactoryTemplate<nav2_waypoint_follower::WaypointFollower>
+[INFO] [1792915054.963133752] [waypoint_follower]: 
+	waypoint_follower lifecycle node launched. 
+	Waiting on external lifecycle transitions to activate
+	See https://design.ros2.org/articles/node_lifecycle.html for more information.
+[INFO] [1792915054.963513402] [waypoint_follower]: Creating
+[INFO] [1792915054.967174896] [nav2_container]: Load Library: /opt/ros/humble/lib/libvelocity_smoother_core.so
+[INFO] [1792915054.967773309] [nav2_container]: Found class: rclcpp_components::NodeFactoryTemplate<nav2_velocity_smoother::VelocitySmoother>
+[INFO] [1792915054.967815473] [nav2_container]: Instantiate class: rclcpp_components::NodeFactoryTemplate<nav2_velocity_smoother::VelocitySmoother>
+[INFO] [1792915054.994917705] [velocity_smoother]: 
+	velocity_smoother lifecycle node launched. 
+	Waiting on external lifecycle transitions to activate
+	See https://design.ros2.org/articles/node_lifecycle.html for more information.
+[INFO] [1792915054.997521062] [nav2_container]: Found class: rclcpp_components::NodeFactoryTemplate<nav2_lifecycle_manager::LifecycleManager>
+[INFO] [1792915054.997556558] [nav2_container]: Instantiate class: rclcpp_components::NodeFactoryTemplate<nav2_lifecycle_manager::LifecycleManager>
+[INFO] [1792915055.019966664] [lifecycle_manager_navigation]: Creating
+[INFO] [1792915055.025086178] [lifecycle_manager_navigation]: [34m[1mCreating and initializing lifecycle service clients[0m[0m
+[INFO] [1792915055.041239558] [lifecycle_manager_navigation]: [34m[1mStarting managed nodes bringup...[0m[0m
+[INFO] [1792915055.041305490] [lifecycle_manager_navigation]: [34m[1mConfiguring controller_server[0m[0m
+[INFO] [1792915055.041461995] [controller_server]: Configuring controller interface
+[INFO] [1792915055.041965739] [controller_server]: getting goal checker plugins..
+[INFO] [1792915055.042310360] [controller_server]: Controller frequency set to 10.0000Hz
+[INFO] [1792915055.042364188] [local_costmap.local_costmap]: Configuring
+[INFO] [1792915055.050772431] [local_costmap.local_costmap]: Using plugin "obstacle_layer"
+[INFO] [1792915055.055447111] [local_costmap.local_costmap]: Subscribed to Topics: scan
+[INFO] [1792915055.061291969] [local_costmap.local_costmap]: Initialized plugin "obstacle_layer"
+[INFO] [1792915055.061341471] [local_costmap.local_costmap]: Using plugin "voxel_layer"
+[INFO] [1792915055.063427420] [local_costmap.local_costmap]: Subscribed to Topics: scan
+[INFO] [1792915055.076961940] [local_costmap.local_costmap]: Initialized plugin "voxel_layer"
+[INFO] [1792915055.077081626] [local_costmap.local_costmap]: Using plugin "inflation_layer"
+[INFO] [1792915055.080177767] [local_costmap.local_costmap]: Initialized plugin "inflation_layer"
+[INFO] [1792915055.091958170] [controller_server]: Created progress_checker : progress_checker of type nav2_controller::SimpleProgressChecker
+[INFO] [1792915055.093778379] [controller_server]: Created goal checker : general_goal_checker of type nav2_controller::SimpleGoalChecker
+[INFO] [1792915055.094903697] [controller_server]: Controller Server has general_goal_checker  goal checkers available.
+[INFO] [1792915055.096472374] [controller_server]: Created controller : FollowPath of type dwb_core::DWBLocalPlanner
+[INFO] [1792915055.100492707] [controller_server]: Setting transform_tolerance to 0.200000
+[INFO] [1792915055.123149969] [controller_server]: Using critic "RotateToGoal" (dwb_critics::RotateToGoalCritic)
+[INFO] [1792915055.129081878] [controller_server]: Critic plugin initialized
+[INFO] [1792915055.129512884] [controller_server]: Using critic "Oscillation" (dwb_critics::OscillationCritic)
+[INFO] [1792915055.131802576] [controller_server]: Critic plugin initialized
+[INFO] [1792915055.132330359] [controller_server]: Using critic "BaseObstacle" (dwb_critics::BaseObstacleCritic)
+[INFO] [1792915055.133036155] [controller_server]: Critic plugin initialized
+[INFO] [1792915055.133548348] [controller_server]: Using critic "GoalAlign" (dwb_critics::GoalAlignCritic)
+[INFO] [1792915055.134604047] [controller_server]: Critic plugin initialized
+[INFO] [1792915055.134934065] [controller_server]: Using critic "PathAlign" (dwb_critics::PathAlignCritic)
+[INFO] [1792915055.135962345] [controller_server]: Critic plugin initialized
+[INFO] [1792915055.136300960] [controller_server]: Using critic "PathDist" (dwb_critics::PathDistCritic)
+[INFO] [1792915055.137362825] [controller_server]: Critic plugin initialized
+[INFO] [1792915055.137700631] [controller_server]: Using critic "GoalDist" (dwb_critics::GoalDistCritic)
+[INFO] [1792915055.138247953] [controller_server]: Critic plugin initialized
+[INFO] [1792915055.138293726] [controller_server]: Controller Server has FollowPath  controllers available.
+[INFO] [1792915055.148336006] [lifecycle_manager_navigation]: [34m[1mConfiguring smoother_server[0m[0m
+[INFO] [1792915055.148536677] [smoother_server]: Configuring smoother server
+[INFO] [1792915055.157863827] [smoother_server]: Created smoother : simple_smoother of type nav2_smoother::SimpleSmoother
+[INFO] [1792915055.159531878] [smoother_server]: Smoother Server has simple_smoother  smoothers available.
+[INFO] [1792915055.166273897] [lifecycle_manager_navigation]: [34m[1mConfiguring planner_server[0m[0m
+[INFO] [1792915055.166460507] [planner_server]: Configuring
+[INFO] [1792915055.166499392] [global_costmap.global_costmap]: Configuring
+[INFO] [1792915055.172600603] [global_costmap.global_costmap]: Using plugin "static_layer"
+[INFO] [1792915055.181173438] [global_costmap.global_costmap]: Subscribing to the map topic (/map) with transient local durability
+[INFO] [1792915055.182611050] [global_costmap.global_costmap]: Initialized plugin "static_layer"
+[INFO] [1792915055.182644085] [global_costmap.global_costmap]: Using plugin "obstacle_layer"
+[INFO] [1792915055.184830033] [global_costmap.global_costmap]: Subscribed to Topics: scan
+[INFO] [1792915055.191049508] [global_costmap.global_costmap]: Initialized plugin "obstacle_layer"
+[INFO] [1792915055.191122503] [global_costmap.global_costmap]: Using plugin "voxel_layer"
+[INFO] [1792915055.193808722] [global_costmap.global_costmap]: Subscribed to Topics: scan
+[INFO] [1792915055.206394607] [global_costmap.global_costmap]: Initialized plugin "voxel_layer"
+[INFO] [1792915055.206453504] [global_costmap.global_costmap]: Using plugin "inflation_layer"
+[INFO] [1792915055.208856866] [global_costmap.global_costmap]: Initialized plugin "inflation_layer"
+[INFO] [1792915055.219921863] [planner_server]: Created global planner plugin GridBased of type nav2_navfn_planner/NavfnPlanner
+[INFO] [1792915055.219976489] [planner_server]: Configuring plugin GridBased of type NavfnPlanner
+[INFO] [1792915055.221397156] [planner_server]: Planner Server has GridBased  planners available.
+[INFO] [1792915055.234545698] [lifecycle_manager_navigation]: [34m[1mConfiguring behavior_server[0m[0m
+[INFO] [1792915055.234709483] [behavior_server]: Configuring
+[INFO] [1792915055.252656580] [global_costmap.global_costmap]: StaticLayer: Resizing costmap to 384 X 384 at 0.050000 m/pix
+[INFO] [1792915055.254938084] [behavior_server]: Creating behavior plugin spin of type nav2_behaviors/Spin
+[INFO] [1792915055.256195826] [behavior_server]: Configuring spin
+[INFO] [1792915055.267368997] [behavior_server]: Creating behavior plugin backup of type nav2_behaviors/BackUp
+[INFO] [1792915055.268405808] [behavior_server]: Configuring backup
+[INFO] [1792915055.276028639] [behavior_server]: Creating behavior plugin drive_on_heading of type nav2_behaviors/DriveOnHeading
+[INFO] [1792915055.277502767] [behavior_server]: Configuring drive_on_heading
+[INFO] [1792915055.290127256] [behavior_server]: Creating behavior plugin wait of type nav2_behaviors/Wait
+[INFO] [1792915055.291736774] [behavior_server]: Configuring wait
+[INFO] [1792915055.304946121] [lifecycle_manager_navigation]: [34m[1mConfiguring bt_navigator[0m[0m
+[INFO] [1792915055.305094864] [bt_navigator]: Configuring
+[INFO] [1792915055.423184832] [lifecycle_manager_navigation]: [34m[1mConfiguring waypoint_follower[0m[0m
+[INFO] [1792915055.423396506] [waypoint_follower]: Configuring
+[INFO] [1792915055.433591513] [waypoint_follower]: Created waypoint_task_executor : wait_at_waypoint of type nav2_waypoint_follower::WaitAtWaypoint
+[INFO] [1792915055.435068735] [lifecycle_manager_navigation]: [34m[1mConfiguring velocity_smoother[0m[0m
+[INFO] [1792915055.435262611] [velocity_smoother]: Configuring velocity smoother
+[INFO] [1792915055.442990993] [lifecycle_manager_navigation]: [34m[1mActivating controller_server[0m[0m
+[INFO] [1792915055.443198817] [controller_server]: Activating
+[INFO] [1792915055.443245803] [local_costmap.local_costmap]: Activating
+[INFO] [1792915055.443263950] [local_costmap.local_costmap]: Checking transform
+[INFO] [1792915055.443412777] [local_costmap.local_costmap]: start
+[INFO] [1792915055.646325548] [controller_server]: Creating bond (controller_server) to lifecycle manager.
+[INFO] [1792915055.744024842] [lifecycle_manager_navigation]: Server controller_server connected with bond.
+[INFO] [1792915055.744096358] [lifecycle_manager_navigation]: [34m[1mActivating smoother_server[0m[0m
+[INFO] [1792915055.744652387] [smoother_server]: Activating
+[INFO] [1792915055.744743337] [smoother_server]: Creating bond (smoother_server) to lifecycle manager.
+[INFO] [1792915055.842649837] [lifecycle_manager_navigation]: Server smoother_server connected with bond.
+[INFO] [1792915055.842729903] [lifecycle_manager_navigation]: [34m[1mActivating planner_server[0m[0m
+[INFO] [1792915055.843032526] [planner_server]: Activating
+[INFO] [1792915055.843099367] [global_costmap.global_costmap]: Activating
+[INFO] [1792915055.843111922] [global_costmap.global_costmap]: Checking transform
+[INFO] [1792915055.843125082] [global_costmap.global_costmap]: Timed out waiting for transform from base_link to map to become available, tf error: Invalid frame ID "map" passed to canTransform argument target_frame - frame does not exist
+[WARN] [1792915055.959102190] [amcl]: New subscription discovered on topic '/particle_cloud', requesting incompatible QoS. No messages will be sent to it. Last incompatible policy: RELIABILITY_QOS_POLICY
+[INFO] [1792915056.343207392] [global_costmap.global_costmap]: Timed out waiting for transform from base_link to map to become available, tf error: Invalid frame ID "map" passed to canTransform argument target_frame - frame does not exist
+[INFO] [1792915056.843180338] [global_costmap.global_costmap]: Timed out waiting for transform from base_link to map to become available, tf error: Invalid frame ID "map" passed to canTransform argument target_frame - frame does not exist
+[WARN] [1792915057.048691144] [amcl]: AMCL cannot publish a pose or update the transform. Please set the initial pose...
+[INFO] [1792915057.343215424] [global_costmap.global_costmap]: Timed out waiting for transform from base_link to map to become available, tf error: Invalid frame ID "map" passed to canTransform argument target_frame - frame does not exist
+[INFO] [1792915057.843209068] [global_costmap.global_costmap]: Timed out waiting for transform from base_link to map to become available, tf error: Invalid frame ID "map" passed to canTransform argument target_frame - frame does not exist
+[INFO] [1792915058.343196694] [global_costmap.global_costmap]: Timed out waiting for transform from base_link to map to become available, tf error: Invalid frame ID "map" passed to canTransform argument target_frame - frame does not exist
+[INFO] [1792915058.843161192] [global_costmap.global_costmap]: Timed out waiting for transform from base_link to map to become available, tf error: Invalid frame ID "map" passed to canTransform argument target_frame - frame does not exist
+[WARN] [1792915062.224878775] [amcl]: AMCL cannot publish a pose or update the transform. Please set the initial pose...
+[INFO] [1792915062.297969278] [global_costmap.global_costmap]: Timed out waiting for transform from base_link to map to become available, tf error: Invalid frame ID "map" passed to canTransform argument target_frame - frame does not exist
+[INFO] [1792915062.298025053] [global_costmap.global_costmap]: Timed out waiting for transform from base_link to map to become available, tf error: Invalid frame ID "map" passed to canTransform argument target_frame - frame does not exist
+[INFO] [1792915062.798116960] [global_costmap.global_costmap]: Timed out waiting for transform from base_link to map to become available, tf error: Invalid frame ID "map" passed to canTransform argument target_frame - frame does not exist
+[INFO] [1792915063.298336209] [global_costmap.global_costmap]: Timed out waiting for transform from base_link to map to become available, tf error: Invalid frame ID "map" passed to canTransform argument target_frame - frame does not exist
+[INFO] [1792915063.798500867] [global_costmap.global_costmap]: Timed out waiting for transform from base_link to map to become available, tf error: Invalid frame ID "map" passed to canTransform argument target_frame - frame does not exist
+[INFO] [1792915064.298645609] [global_costmap.global_costmap]: Timed out waiting for transform from base_link to map to become available, tf error: Invalid frame ID "map" passed to canTransform argument target_frame - frame does not exist
+[WARN] [1792915064.452367470] [amcl]: AMCL cannot publish a pose or update the transform. Please set the initial pose...
+[INFO] [1792915064.798892360] [global_costmap.global_costmap]: Timed out waiting for transform from base_link to map to become available, tf error: Invalid frame ID "map" passed to canTransform argument target_frame - frame does not exist
+[INFO] [1792915065.299105634] [global_costmap.global_costmap]: Timed out waiting for transform from base_link to map to become available, tf error: Invalid frame ID "map" passed to canTransform argument target_frame - frame does not exist
+[INFO] [1792915065.799271555] [global_costmap.global_costmap]: Timed out waiting for transform from base_link to map to become available, tf error: Invalid frame ID "map" passed to canTransform argument target_frame - frame does not exist
+[INFO] [1792915066.299454421] [global_costmap.global_costmap]: Timed out waiting for transform from base_link to map to become available, tf error: Invalid frame ID "map" passed to canTransform argument target_frame - frame does not exist
+[WARN] [1792915066.674744140] [amcl]: AMCL cannot publish a pose or update the transform. Please set the initial pose...
+[INFO] [1792915066.799575422] [global_costmap.global_costmap]: Timed out waiting for transform from base_link to map to become available, tf error: Invalid frame ID "map" passed to canTransform argument target_frame - frame does not exist
+[INFO] [1792915067.299746642] [global_costmap.global_costmap]: Timed out waiting for transform from base_link to map to become available, tf error: Invalid frame ID "map" passed to canTransform argument target_frame - frame does not exist
+[INFO] [1792915067.799941980] [global_costmap.global_costmap]: Timed out waiting for transform from base_link to map to become available, tf error: Invalid frame ID "map" passed to canTransform argument target_frame - frame does not exist
+[INFO] [1792915068.300095264] [global_costmap.global_costmap]: Timed out waiting for transform from base_link to map to become available, tf error: Invalid frame ID "map" passed to canTransform argument target_frame - frame does not exist
+[INFO] [1792915068.800274787] [global_costmap.global_costmap]: Timed out waiting for transform from base_link to map to become available, tf error: Invalid frame ID "map" passed to canTransform argument target_frame - frame does not exist
+[WARN] [1792915068.852920253] [amcl]: AMCL cannot publish a pose or update the transform. Please set the initial pose...
+[INFO] [1792915069.300381379] [global_costmap.global_costmap]: Timed out waiting for transform from base_link to map to become available, tf error: Invalid frame ID "map" passed to canTransform argument target_frame - frame does not exist
+[INFO] [1792915069.358987358] [amcl]: initialPoseReceived
+[INFO] [1792915069.359080484] [amcl]: Setting pose (24.800000): 0.009 0.004 0.005
+[INFO] [1792915069.800625090] [global_costmap.global_costmap]: Timed out waiting for transform from base_link to map to become available, tf error: Lookup would require extrapolation into the past.  Requested time 25.284000 but the earliest data is at time 25.958000, when looking up transform from frame [base_link] to frame [map]
+[INFO] [1792915070.300967665] [global_costmap.global_costmap]: Timed out waiting for transform from base_link to map to become available, tf error: Lookup would require extrapolation into the past.  Requested time 25.794000 but the earliest data is at time 25.958000, when looking up transform from frame [base_link] to frame [map]
+[INFO] [1792915070.801257148] [global_costmap.global_costmap]: start
+[INFO] [1792915071.803626704] [planner_server]: Activating plugin GridBased of type NavfnPlanner
+[INFO] [1792915071.805510264] [planner_server]: Creating bond (planner_server) to lifecycle manager.
+[INFO] [1792915071.905193847] [lifecycle_manager_navigation]: Server planner_server connected with bond.
+[INFO] [1792915071.905308858] [lifecycle_manager_navigation]: [34m[1mActivating behavior_server[0m[0m
+[INFO] [1792915071.905731093] [behavior_server]: Activating
+[INFO] [1792915071.905774138] [behavior_server]: Activating spin
+[INFO] [1792915071.905809937] [behavior_server]: Activating backup
+[INFO] [1792915071.905825633] [behavior_server]: Activating drive_on_heading
+[INFO] [1792915071.905837793] [behavior_server]: Activating wait
+[INFO] [1792915071.905852579] [behavior_server]: Creating bond (behavior_server) to lifecycle manager.
+[INFO] [1792915072.004378530] [lifecycle_manager_navigation]: Server behavior_server connected with bond.
+[INFO] [1792915072.004481556] [lifecycle_manager_navigation]: [34m[1mActivating bt_navigator[0m[0m
+[INFO] [1792915072.004971115] [bt_navigator]: Activating
+[INFO] [1792915072.121967568] [bt_navigator]: Creating bond (bt_navigator) to lifecycle manager.
+[INFO] [1792915072.227569554] [lifecycle_manager_navigation]: Server bt_navigator connected with bond.
+[INFO] [1792915072.227636266] [lifecycle_manager_navigation]: [34m[1mActivating waypoint_follower[0m[0m
+[INFO] [1792915072.228151472] [waypoint_follower]: Activating
+[INFO] [1792915072.228221711] [waypoint_follower]: Creating bond (waypoint_follower) to lifecycle manager.
+[INFO] [1792915072.327003302] [lifecycle_manager_navigation]: Server waypoint_follower connected with bond.
+[INFO] [1792915072.327048689] [lifecycle_manager_navigation]: [34m[1mActivating velocity_smoother[0m[0m
+[INFO] [1792915072.327285012] [velocity_smoother]: Activating
+[INFO] [1792915072.327342569] [velocity_smoother]: Creating bond (velocity_smoother) to lifecycle manager.
+[INFO] [1792915072.430977719] [lifecycle_manager_navigation]: Server velocity_smoother connected with bond.
+[INFO] [1792915072.431093227] [lifecycle_manager_navigation]: [34m[1mManaged nodes are active[0m[0m
+[INFO] [1792915072.431154429] [lifecycle_manager_navigation]: [34m[1mCreating bond timer...[0m[0m
+[INFO] [1792915076.697967631] [bt_navigator]: Begin navigating from current location (0.01, -0.01) to (0.03, 0.00)
+[INFO] [1792915076.718943742] [controller_server]: Received a goal, begin computing control effort.
+[WARN] [1792915076.719031624] [controller_server]: No goal checker was specified in parameter 'current_goal_checker'. Server will use only plugin loaded general_goal_checker . This warning will appear once.
+[INFO] [1792915076.727509244] [controller_server]: Reached the goal!
+[INFO] [1792915076.758610367] [bt_navigator]: Goal succeeded
+[INFO] [1792915183.655185553] [bt_navigator]: Begin navigating from current location (0.01, -0.01) to (3.53, -1.95)
+[WARN] [1792915183.655930969] [planner_server]: GridBased: failed to create plan with tolerance 0.50.
+[WARN] [1792915183.656001640] [planner_server]: Planning algorithm GridBased failed to generate a valid path to (3.53, -1.95)
+[WARN] [1792915183.656013671] [planner_server]: [compute_path_to_pose] [ActionServer] Aborting handle.
+[INFO] [1792915183.675849927] [global_costmap.global_costmap]: Received request to clear entirely the global_costmap
+[WARN] [1792915184.627822284] [planner_server]: GridBased: failed to create plan with tolerance 0.50.
+[WARN] [1792915184.627918781] [planner_server]: Planning algorithm GridBased failed to generate a valid path to (3.53, -1.95)
+[WARN] [1792915184.627934485] [planner_server]: [compute_path_to_pose] [ActionServer] Aborting handle.
+[INFO] [1792915184.645475186] [local_costmap.local_costmap]: Received request to clear entirely the local_costmap
+[INFO] [1792915184.646314955] [global_costmap.global_costmap]: Received request to clear entirely the global_costmap
+[WARN] [1792915185.627413592] [planner_server]: GridBased: failed to create plan with tolerance 0.50.
+[WARN] [1792915185.627488267] [planner_server]: Planning algorithm GridBased failed to generate a valid path to (3.53, -1.95)
+[WARN] [1792915185.627500546] [planner_server]: [compute_path_to_pose] [ActionServer] Aborting handle.
+[INFO] [1792915185.645381469] [global_costmap.global_costmap]: Received request to clear entirely the global_costmap
+[WARN] [1792915186.626538763] [planner_server]: GridBased: failed to create plan with tolerance 0.50.
+[WARN] [1792915186.626653793] [planner_server]: Planning algorithm GridBased failed to generate a valid path to (3.53, -1.95)
+[WARN] [1792915186.626669608] [planner_server]: [compute_path_to_pose] [ActionServer] Aborting handle.
+[INFO] [1792915186.646367145] [behavior_server]: Running spin
+[INFO] [1792915186.646720234] [behavior_server]: Turning 1.57 for spin behavior.
+[INFO] [1792915188.446951513] [behavior_server]: spin completed successfully
+[WARN] [1792915188.476125660] [planner_server]: GridBased: failed to create plan with tolerance 0.50.
+[WARN] [1792915188.476222028] [planner_server]: Planning algorithm GridBased failed to generate a valid path to (3.53, -1.95)
+[WARN] [1792915188.476236851] [planner_server]: [compute_path_to_pose] [ActionServer] Aborting handle.
+[INFO] [1792915188.495464951] [global_costmap.global_costmap]: Received request to clear entirely the global_costmap
+[WARN] [1792915188.626463997] [planner_server]: GridBased: failed to create plan with tolerance 0.50.
+[WARN] [1792915188.626522858] [planner_server]: Planning algorithm GridBased failed to generate a valid path to (3.53, -1.95)
+[WARN] [1792915188.626533079] [planner_server]: [compute_path_to_pose] [ActionServer] Aborting handle.
+[INFO] [1792915188.645890958] [behavior_server]: Running wait
+[INFO] [1792915191.505469668] [bt_navigator]: Received goal preemption request
+[INFO] [1792915191.506141434] [bt_navigator]: Begin navigating from current location (-0.02, 0.02) to (3.22, -1.38)
+[INFO] [1792915193.646089406] [behavior_server]: wait completed successfully
+[WARN] [1792915193.676131618] [planner_server]: GridBased: failed to create plan with tolerance 0.50.
+[WARN] [1792915193.676206119] [planner_server]: Planning algorithm GridBased failed to generate a valid path to (3.22, -1.38)
+[WARN] [1792915193.676218334] [planner_server]: [compute_path_to_pose] [ActionServer] Aborting handle.
+[INFO] [1792915193.695629048] [global_costmap.global_costmap]: Received request to clear entirely the global_costmap
+[WARN] [1792915194.627284719] [planner_server]: GridBased: failed to create plan with tolerance 0.50.
+[WARN] [1792915194.627355794] [planner_server]: Planning algorithm GridBased failed to generate a valid path to (3.22, -1.38)
+[WARN] [1792915194.627373932] [planner_server]: [compute_path_to_pose] [ActionServer] Aborting handle.
+[INFO] [1792915194.646072701] [behavior_server]: Running backup
+[INFO] [1792915194.646276752] [behavior_server]: DriveOnHeading: no acceleration or deceleration limits set
+[INFO] [1792915203.732155628] [behavior_server]: backup completed successfully
+[WARN] [1792915203.761915316] [planner_server]: GridBased: failed to create plan with tolerance 0.50.
+[WARN] [1792915203.762078085] [planner_server]: Planning algorithm GridBased failed to generate a valid path to (3.22, -1.38)
+[WARN] [1792915203.762094938] [planner_server]: [compute_path_to_pose] [ActionServer] Aborting handle.
+[INFO] [1792915203.781278447] [global_costmap.global_costmap]: Received request to clear entirely the global_costmap
+[WARN] [1792915204.612814999] [planner_server]: GridBased: failed to create plan with tolerance 0.50.
+[WARN] [1792915204.612872730] [planner_server]: Planning algorithm GridBased failed to generate a valid path to (3.22, -1.38)
+[WARN] [1792915204.612883751] [planner_server]: [compute_path_to_pose] [ActionServer] Aborting handle.
+[INFO] [1792915204.631216229] [local_costmap.local_costmap]: Received request to clear entirely the local_costmap
+[INFO] [1792915204.631705067] [global_costmap.global_costmap]: Received request to clear entirely the global_costmap
+[WARN] [1792915205.613384247] [planner_server]: GridBased: failed to create plan with tolerance 0.50.
+[WARN] [1792915205.613535022] [planner_server]: Planning algorithm GridBased failed to generate a valid path to (3.22, -1.38)
+[WARN] [1792915205.613553086] [planner_server]: [compute_path_to_pose] [ActionServer] Aborting handle.
+[INFO] [1792915205.631096309] [global_costmap.global_costmap]: Received request to clear entirely the global_costmap
+[WARN] [1792915206.612307656] [planner_server]: GridBased: failed to create plan with tolerance 0.50.
+[WARN] [1792915206.612423081] [planner_server]: Planning algorithm GridBased failed to generate a valid path to (3.22, -1.38)
+[WARN] [1792915206.612440824] [planner_server]: [compute_path_to_pose] [ActionServer] Aborting handle.
+[INFO] [1792915206.631380230] [behavior_server]: Running spin
+[INFO] [1792915206.631474072] [behavior_server]: Turning 1.57 for spin behavior.
+[INFO] [1792915208.431659018] [behavior_server]: spin completed successfully
+[WARN] [1792915208.461656729] [planner_server]: GridBased: failed to create plan with tolerance 0.50.
+[WARN] [1792915208.461756477] [planner_server]: Planning algorithm GridBased failed to generate a valid path to (3.22, -1.38)
+[WARN] [1792915208.461775231] [planner_server]: [compute_path_to_pose] [ActionServer] Aborting handle.
+[INFO] [1792915208.481111109] [global_costmap.global_costmap]: Received request to clear entirely the global_costmap
+[WARN] [1792915208.612636198] [planner_server]: GridBased: failed to create plan with tolerance 0.50.
+[WARN] [1792915208.612756986] [planner_server]: Planning algorithm GridBased failed to generate a valid path to (3.22, -1.38)
+[WARN] [1792915208.612796707] [planner_server]: [compute_path_to_pose] [ActionServer] Aborting handle.
+[WARN] [1792915208.641029510] [bt_navigator]: [navigate_to_pose] [ActionServer] Aborting handle.
+[ERROR] [1792915208.641431678] [bt_navigator]: Goal failed
+[INFO] [1792915229.470304336] [bt_navigator]: Begin navigating from current location (-0.10, -0.15) to (2.63, 1.72)
+[WARN] [1792915229.471282057] [planner_server]: GridBased: failed to create plan with tolerance 0.50.
+[WARN] [1792915229.471366026] [planner_server]: Planning algorithm GridBased failed to generate a valid path to (2.63, 1.72)
+[WARN] [1792915229.471382576] [planner_server]: [compute_path_to_pose] [ActionServer] Aborting handle.
+[INFO] [1792915229.490804807] [global_costmap.global_costmap]: Received request to clear entirely the global_costmap
+[WARN] [1792915229.612293240] [planner_server]: GridBased: failed to create plan with tolerance 0.50.
+[WARN] [1792915229.612410106] [planner_server]: Planning algorithm GridBased failed to generate a valid path to (2.63, 1.72)
+[WARN] [1792915229.612432772] [planner_server]: [compute_path_to_pose] [ActionServer] Aborting handle.
+[INFO] [1792915229.631047302] [behavior_server]: Running wait
+[INFO] [1792915234.631247246] [behavior_server]: wait completed successfully
+[WARN] [1792915234.661461309] [planner_server]: GridBased: failed to create plan with tolerance 0.50.
+[WARN] [1792915234.661551009] [planner_server]: Planning algorithm GridBased failed to generate a valid path to (2.63, 1.72)
+[WARN] [1792915234.661561672] [planner_server]: [compute_path_to_pose] [ActionServer] Aborting handle.
+[INFO] [1792915234.680711492] [global_costmap.global_costmap]: Received request to clear entirely the global_costmap
+[WARN] [1792915238.540612127] [planner_server]: GridBased: failed to create plan with tolerance 0.50.
+[WARN] [1792915238.540708504] [planner_server]: Planning algorithm GridBased failed to generate a valid path to (2.63, 1.72)
+[WARN] [1792915238.540731244] [planner_server]: [compute_path_to_pose] [ActionServer] Aborting handle.
+[INFO] [1792915238.557682693] [behavior_server]: Running backup
+[INFO] [1792915244.658045408] [behavior_server]: backup completed successfully
+[WARN] [1792915244.687785217] [planner_server]: GridBased: failed to create plan with tolerance 0.50.
+[WARN] [1792915244.687892202] [planner_server]: Planning algorithm GridBased failed to generate a valid path to (2.63, 1.72)
+[WARN] [1792915244.687905381] [planner_server]: [compute_path_to_pose] [ActionServer] Aborting handle.
+[INFO] [1792915244.706742002] [global_costmap.global_costmap]: Received request to clear entirely the global_costmap
+[WARN] [1792915245.537811010] [planner_server]: GridBased: failed to create plan with tolerance 0.50.
+[WARN] [1792915245.537948605] [planner_server]: Planning algorithm GridBased failed to generate a valid path to (2.63, 1.72)
+[WARN] [1792915245.537968341] [planner_server]: [compute_path_to_pose] [ActionServer] Aborting handle.
+[INFO] [1792915245.556870013] [local_costmap.local_costmap]: Received request to clear entirely the local_costmap
+[INFO] [1792915245.557257987] [global_costmap.global_costmap]: Received request to clear entirely the global_costmap
+[WARN] [1792915246.538651191] [planner_server]: GridBased: failed to create plan with tolerance 0.50.
+[WARN] [1792915246.538758810] [planner_server]: Planning algorithm GridBased failed to generate a valid path to (2.63, 1.72)
+[WARN] [1792915246.538772255] [planner_server]: [compute_path_to_pose] [ActionServer] Aborting handle.
+[INFO] [1792915246.556860692] [global_costmap.global_costmap]: Received request to clear entirely the global_costmap
+[WARN] [1792915247.538709947] [planner_server]: GridBased: failed to create plan with tolerance 0.50.
+[WARN] [1792915247.538823150] [planner_server]: Planning algorithm GridBased failed to generate a valid path to (2.63, 1.72)
+[WARN] [1792915247.538841022] [planner_server]: [compute_path_to_pose] [ActionServer] Aborting handle.
+[INFO] [1792915247.557225926] [behavior_server]: Running spin
+[INFO] [1792915247.557443441] [behavior_server]: Turning 1.57 for spin behavior.
+[INFO] [1792915249.357698371] [behavior_server]: spin completed successfully
+[WARN] [1792915249.387681908] [planner_server]: GridBased: failed to create plan with tolerance 0.50.
+[WARN] [1792915249.387832765] [planner_server]: Planning algorithm GridBased failed to generate a valid path to (2.63, 1.72)
+[WARN] [1792915249.387862182] [planner_server]: [compute_path_to_pose] [ActionServer] Aborting handle.
+[INFO] [1792915249.406846914] [global_costmap.global_costmap]: Received request to clear entirely the global_costmap
+[WARN] [1792915249.538056208] [planner_server]: GridBased: failed to create plan with tolerance 0.50.
+[WARN] [1792915249.538121111] [planner_server]: Planning algorithm GridBased failed to generate a valid path to (2.63, 1.72)
+[WARN] [1792915249.538132132] [planner_server]: [compute_path_to_pose] [ActionServer] Aborting handle.
+[INFO] [1792915249.557272243] [behavior_server]: Running wait
+[INFO] [1792915254.557603855] [behavior_server]: wait completed successfully
+[WARN] [1792915254.587458807] [planner_server]: GridBased: failed to create plan with tolerance 0.50.
+[WARN] [1792915254.587526282] [planner_server]: Planning algorithm GridBased failed to generate a valid path to (2.63, 1.72)
+[WARN] [1792915254.587536862] [planner_server]: [compute_path_to_pose] [ActionServer] Aborting handle.
+[INFO] [1792915254.606773796] [global_costmap.global_costmap]: Received request to clear entirely the global_costmap
+[WARN] [1792915255.538624500] [planner_server]: GridBased: failed to create plan with tolerance 0.50.
+[WARN] [1792915255.538853412] [planner_server]: Planning algorithm GridBased failed to generate a valid path to (2.63, 1.72)
+[WARN] [1792915255.538880211] [planner_server]: [compute_path_to_pose] [ActionServer] Aborting handle.
+[INFO] [1792915255.557005184] [behavior_server]: Running backup
+[INFO] [1792915261.657244146] [behavior_server]: backup completed successfully
+[WARN] [1792915261.687788521] [planner_server]: GridBased: failed to create plan with tolerance 0.50.
+[WARN] [1792915261.687928532] [planner_server]: Planning algorithm GridBased failed to generate a valid path to (2.63, 1.72)
+[WARN] [1792915261.687950215] [planner_server]: [compute_path_to_pose] [ActionServer] Aborting handle.
+[INFO] [1792915261.706702343] [global_costmap.global_costmap]: Received request to clear entirely the global_costmap
+[WARN] [1792915262.537786147] [planner_server]: GridBased: failed to create plan with tolerance 0.50.
+[WARN] [1792915262.537873184] [planner_server]: Planning algorithm GridBased failed to generate a valid path to (2.63, 1.72)
+[WARN] [1792915262.537886400] [planner_server]: [compute_path_to_pose] [ActionServer] Aborting handle.
+[WARN] [1792915262.566570744] [bt_navigator]: [navigate_to_pose] [ActionServer] Aborting handle.
+[ERROR] [1792915262.566810282] [bt_navigator]: Goal failed
+[INFO] [1792915279.300745427] [bt_navigator]: Begin navigating from current location (-0.20, 0.01) to (2.20, 2.50)
+[WARN] [1792915279.302378071] [planner_server]: GridBased: failed to create plan with tolerance 0.50.
+[WARN] [1792915279.302510697] [planner_server]: Planning algorithm GridBased failed to generate a valid path to (2.20, 2.50)
+[WARN] [1792915279.302535917] [planner_server]: [compute_path_to_pose] [ActionServer] Aborting handle.
+[INFO] [1792915279.321129913] [global_costmap.global_costmap]: Received request to clear entirely the global_costmap
+[WARN] [1792915279.452314395] [planner_server]: GridBased: failed to create plan with tolerance 0.50.
+[WARN] [1792915279.452376819] [planner_server]: Planning algorithm GridBased failed to generate a valid path to (2.20, 2.50)
+[WARN] [1792915279.452386884] [planner_server]: [compute_path_to_pose] [ActionServer] Aborting handle.
+[INFO] [1792915279.471084892] [local_costmap.local_costmap]: Received request to clear entirely the local_costmap
+[INFO] [1792915279.471354120] [global_costmap.global_costmap]: Received request to clear entirely the global_costmap
+[WARN] [1792915280.452497177] [planner_server]: GridBased: failed to create plan with tolerance 0.50.
+[WARN] [1792915280.452570282] [planner_server]: Planning algorithm GridBased failed to generate a valid path to (2.20, 2.50)
+[WARN] [1792915280.452582249] [planner_server]: [compute_path_to_pose] [ActionServer] Aborting handle.
+[INFO] [1792915280.471191771] [global_costmap.global_costmap]: Received request to clear entirely the global_costmap
+[WARN] [1792915281.453175298] [planner_server]: GridBased: failed to create plan with tolerance 0.50.
+[WARN] [1792915281.453289970] [planner_server]: Planning algorithm GridBased failed to generate a valid path to (2.20, 2.50)
+[WARN] [1792915281.453306758] [planner_server]: [compute_path_to_pose] [ActionServer] Aborting handle.
+[INFO] [1792915281.471567678] [behavior_server]: Running spin
+[INFO] [1792915281.471759624] [behavior_server]: Turning 1.57 for spin behavior.
+[INFO] [1792915283.271925271] [behavior_server]: spin completed successfully
+[WARN] [1792915283.303007021] [planner_server]: GridBased: failed to create plan with tolerance 0.50.
+[WARN] [1792915283.303071117] [planner_server]: Planning algorithm GridBased failed to generate a valid path to (2.20, 2.50)
+[WARN] [1792915283.303081844] [planner_server]: [compute_path_to_pose] [ActionServer] Aborting handle.
+[INFO] [1792915283.321613130] [global_costmap.global_costmap]: Received request to clear entirely the global_costmap
+[WARN] [1792915283.453587634] [planner_server]: GridBased: failed to create plan with tolerance 0.50.
+[WARN] [1792915283.453686317] [planner_server]: Planning algorithm GridBased failed to generate a valid path to (2.20, 2.50)
+[WARN] [1792915283.453702398] [planner_server]: [compute_path_to_pose] [ActionServer] Aborting handle.
+[INFO] [1792915283.471344591] [behavior_server]: Running wait
+[INFO] [1792915288.471504704] [behavior_server]: wait completed successfully
+[WARN] [1792915288.502326960] [planner_server]: GridBased: failed to create plan with tolerance 0.50.
+[WARN] [1792915288.502472403] [planner_server]: Planning algorithm GridBased failed to generate a valid path to (2.20, 2.50)
+[WARN] [1792915288.502499671] [planner_server]: [compute_path_to_pose] [ActionServer] Aborting handle.
+[INFO] [1792915288.521245530] [global_costmap.global_costmap]: Received request to clear entirely the global_costmap
+[WARN] [1792915289.452842758] [planner_server]: GridBased: failed to create plan with tolerance 0.50.
+[WARN] [1792915289.452914908] [planner_server]: Planning algorithm GridBased failed to generate a valid path to (2.20, 2.50)
+[WARN] [1792915289.452926756] [planner_server]: [compute_path_to_pose] [ActionServer] Aborting handle.
+[INFO] [1792915289.471479453] [behavior_server]: Running backup
+[INFO] [1792915295.571834511] [behavior_server]: backup completed successfully
+[WARN] [1792915295.602749117] [planner_server]: GridBased: failed to create plan with tolerance 0.50.
+[WARN] [1792915295.602896190] [planner_server]: Planning algorithm GridBased failed to generate a valid path to (2.20, 2.50)
+[WARN] [1792915295.602925010] [planner_server]: [compute_path_to_pose] [ActionServer] Aborting handle.
+[INFO] [1792915295.621038301] [global_costmap.global_costmap]: Received request to clear entirely the global_costmap
+[WARN] [1792915296.453447243] [planner_server]: GridBased: failed to create plan with tolerance 0.50.
+[WARN] [1792915296.453645847] [planner_server]: Planning algorithm GridBased failed to generate a valid path to (2.20, 2.50)
+[WARN] [1792915296.453698573] [planner_server]: [compute_path_to_pose] [ActionServer] Aborting handle.
+[INFO] [1792915296.471104655] [local_costmap.local_costmap]: Received request to clear entirely the local_costmap
+[INFO] [1792915296.471393639] [global_costmap.global_costmap]: Received request to clear entirely the global_costmap
+[WARN] [1792915297.452562872] [planner_server]: GridBased: failed to create plan with tolerance 0.50.
+[WARN] [1792915297.452630136] [planner_server]: Planning algorithm GridBased failed to generate a valid path to (2.20, 2.50)
+[WARN] [1792915297.452641882] [planner_server]: [compute_path_to_pose] [ActionServer] Aborting handle.
+[INFO] [1792915297.471198730] [global_costmap.global_costmap]: Received request to clear entirely the global_costmap
+[WARN] [1792915298.452776131] [planner_server]: GridBased: failed to create plan with tolerance 0.50.
+[WARN] [1792915298.452847674] [planner_server]: Planning algorithm GridBased failed to generate a valid path to (2.20, 2.50)
+[WARN] [1792915298.452859760] [planner_server]: [compute_path_to_pose] [ActionServer] Aborting handle.
+[INFO] [1792915298.471470803] [behavior_server]: Running spin
+[INFO] [1792915298.471607030] [behavior_server]: Turning 1.57 for spin behavior.
+[INFO] [1792915300.271917326] [behavior_server]: spin completed successfully
+[WARN] [1792915300.301787801] [planner_server]: GridBased: failed to create plan with tolerance 0.50.
+[WARN] [1792915300.301843309] [planner_server]: Planning algorithm GridBased failed to generate a valid path to (2.20, 2.50)
+[WARN] [1792915300.301852080] [planner_server]: [compute_path_to_pose] [ActionServer] Aborting handle.
+[INFO] [1792915300.321191089] [global_costmap.global_costmap]: Received request to clear entirely the global_costmap
+[WARN] [1792915300.452702128] [planner_server]: GridBased: failed to create plan with tolerance 0.50.
+[WARN] [1792915300.452829814] [planner_server]: Planning algorithm GridBased failed to generate a valid path to (2.20, 2.50)
+[WARN] [1792915300.452870232] [planner_server]: [compute_path_to_pose] [ActionServer] Aborting handle.
+[WARN] [1792915300.481030192] [bt_navigator]: [navigate_to_pose] [ActionServer] Aborting handle.
+[ERROR] [1792915300.481429320] [bt_navigator]: Goal failed
+[INFO] [1792915395.212298602] [bt_navigator]: Begin navigating from current location (-2.02, -0.60) to (1.42, -2.64)
+[INFO] [1792915395.233210356] [controller_server]: Received a goal, begin computing control effort.
+[INFO] [1792915396.333584606] [controller_server]: Passing new path to controller.
+[INFO] [1792915397.333566559] [controller_server]: Passing new path to controller.
+[INFO] [1792915398.333555130] [controller_server]: Passing new path to controller.
+[INFO] [1792915399.433548980] [controller_server]: Passing new path to controller.
+[INFO] [1792915400.433588878] [controller_server]: Passing new path to controller.
+[INFO] [1792915401.433561461] [controller_server]: Passing new path to controller.
+[INFO] [1792915402.533562280] [controller_server]: Passing new path to controller.
+[INFO] [1792915403.533568211] [controller_server]: Passing new path to controller.
+[INFO] [1792915404.533544346] [controller_server]: Passing new path to controller.
+[INFO] [1792915405.533591671] [controller_server]: Passing new path to controller.
+[INFO] [1792915406.633587609] [controller_server]: Passing new path to controller.
+[INFO] [1792915407.633566751] [controller_server]: Passing new path to controller.
+[INFO] [1792915408.633511217] [controller_server]: Passing new path to controller.
+[INFO] [1792915409.733536541] [controller_server]: Passing new path to controller.
+[INFO] [1792915410.733523198] [controller_server]: Passing new path to controller.
+[INFO] [1792915411.733570140] [controller_server]: Passing new path to controller.
+[INFO] [1792915417.989329631] [controller_server]: Passing new path to controller.
+[INFO] [1792915419.089608860] [controller_server]: Passing new path to controller.
+[INFO] [1792915420.089278992] [controller_server]: Passing new path to controller.
+[INFO] [1792915421.089267263] [controller_server]: Passing new path to controller.
+[INFO] [1792915422.189244000] [controller_server]: Passing new path to controller.
+[INFO] [1792915423.189273069] [controller_server]: Passing new path to controller.
+[INFO] [1792915424.189339796] [controller_server]: Passing new path to controller.
+[INFO] [1792915425.289291557] [controller_server]: Passing new path to controller.
+[INFO] [1792915426.289272824] [controller_server]: Passing new path to controller.
+[INFO] [1792915426.697053087] [controller_server]: Reached the goal!
+[INFO] [1792915426.729519542] [bt_navigator]: Goal succeeded
+[INFO] [1792915427.566954000] [bt_navigator]: Begin navigating from current location (0.92, -2.19) to (0.53, 0.20)
+[INFO] [1792915427.588376731] [controller_server]: Received a goal, begin computing control effort.
+[INFO] [1792915428.688799343] [controller_server]: Passing new path to controller.
+[INFO] [1792915429.688820041] [controller_server]: Passing new path to controller.
+[INFO] [1792915430.688803565] [controller_server]: Passing new path to controller.
+[INFO] [1792915431.788812747] [controller_server]: Passing new path to controller.
+[INFO] [1792915432.788899220] [controller_server]: Passing new path to controller.
+[INFO] [1792915433.788831219] [controller_server]: Passing new path to controller.
+[INFO] [1792915434.788797696] [controller_server]: Passing new path to controller.
+[INFO] [1792915435.888804392] [controller_server]: Passing new path to controller.
+[INFO] [1792915436.888828823] [controller_server]: Passing new path to controller.
+[WARN] [1792915437.858638496] [planner_server]: Planner loop missed its desired rate of 20.0000 Hz. Current loop rate is 10.0000 Hz
+[INFO] [1792915437.888790240] [controller_server]: Passing new path to controller.
+[INFO] [1792915438.988816484] [controller_server]: Passing new path to controller.
+[INFO] [1792915439.988771151] [controller_server]: Passing new path to controller.
+[INFO] [1792915440.988856919] [controller_server]: Passing new path to controller.
+[INFO] [1792915442.088887345] [controller_server]: Passing new path to controller.
+[WARN] [1792915443.007973151] [planner_server]: Planner loop missed its desired rate of 20.0000 Hz. Current loop rate is 10.0000 Hz
+[INFO] [1792915443.088819044] [controller_server]: Passing new path to controller.
+[INFO] [1792915444.088833429] [controller_server]: Passing new path to controller.
+[INFO] [1792915445.088895537] [controller_server]: Passing new path to controller.
+[INFO] [1792915445.627266409] [bt_navigator]: Received goal preemption request
+[INFO] [1792915445.627612040] [bt_navigator]: Begin navigating from current location (0.54, 0.15) to (4.21, 0.06)
+[WARN] [1792915446.100031385] [planner_server]: GridBased: failed to create plan with tolerance 0.50.
+[WARN] [1792915446.100229295] [planner_server]: Planning algorithm GridBased failed to generate a valid path to (4.21, 0.06)
+[WARN] [1792915446.100273518] [planner_server]: [compute_path_to_pose] [ActionServer] Aborting handle.
+[INFO] [1792915446.117588335] [global_costmap.global_costmap]: Received request to clear entirely the global_costmap
+[WARN] [1792915446.519211625] [planner_server]: GridBased: failed to create plan with tolerance 0.50.
+[WARN] [1792915446.519287943] [planner_server]: Planning algorithm GridBased failed to generate a valid path to (4.21, 0.06)
+[WARN] [1792915446.519301248] [planner_server]: [compute_path_to_pose] [ActionServer] Aborting handle.
+[ERROR] [1792915446.557817827] [bt_navigator_navigate_to_pose_rclcpp_node]: Failed to get result for follow_path in node halt!
+[WARN] [1792915446.559190863] [BehaviorTreeEngine]: Behavior Tree tick rate 100.00 was exceeded!
+[INFO] [1792915446.559284289] [behavior_server]: Running wait
+[INFO] [1792915446.588846304] [controller_server]: Goal was canceled. Stopping the robot.
+[INFO] [1792915446.589012256] [controller_server]: [follow_path] [ActionServer] Client requested to cancel the goal. Cancelling.
+[INFO] [1792915451.559797877] [behavior_server]: wait completed successfully
+[WARN] [1792915451.590514898] [planner_server]: GridBased: failed to create plan with tolerance 0.50.
+[WARN] [1792915451.590585248] [planner_server]: Planning algorithm GridBased failed to generate a valid path to (4.21, 0.06)
+[WARN] [1792915451.590595323] [planner_server]: [compute_path_to_pose] [ActionServer] Aborting handle.
+[INFO] [1792915451.610147832] [global_costmap.global_costmap]: Received request to clear entirely the global_costmap
+[INFO] [1792915452.319652245] [bt_navigator]: Received goal preemption request
+[INFO] [1792915452.320226376] [bt_navigator]: Begin navigating from current location (0.54, 0.16) to (0.99, -3.53)
+[WARN] [1792915452.513819226] [planner_server]: GridBased: failed to create plan with tolerance 0.50.
+[WARN] [1792915452.514029918] [planner_server]: Planning algorithm GridBased failed to generate a valid path to (4.21, 0.06)
+[WARN] [1792915452.514058417] [planner_server]: [compute_path_to_pose] [ActionServer] Aborting handle.
+[INFO] [1792915452.529875906] [behavior_server]: Running backup
+[WARN] [1792915453.830326741] [behavior_server]: Collision Ahead - Exiting DriveOnHeading
+[WARN] [1792915453.830466872] [behavior_server]: backup failed
+[WARN] [1792915453.830486232] [behavior_server]: [backup] [ActionServer] Aborting handle.
+[INFO] [1792915453.859809942] [local_costmap.local_costmap]: Received request to clear entirely the local_costmap
+[INFO] [1792915453.860346000] [global_costmap.global_costmap]: Received request to clear entirely the global_costmap
+[WARN] [1792915454.513171257] [planner_server]: GridBased: failed to create plan with tolerance 0.50.
+[WARN] [1792915454.513378644] [planner_server]: Planning algorithm GridBased failed to generate a valid path to (0.99, -3.53)
+[WARN] [1792915454.513412992] [planner_server]: [compute_path_to_pose] [ActionServer] Aborting handle.
+[INFO] [1792915454.529923704] [global_costmap.global_costmap]: Received request to clear entirely the global_costmap
+[WARN] [1792915455.521737904] [planner_server]: GridBased: failed to create plan with tolerance 0.50.
+[WARN] [1792915455.521833777] [planner_server]: Planning algorithm GridBased failed to generate a valid path to (0.99, -3.53)
+[WARN] [1792915455.521849078] [planner_server]: [compute_path_to_pose] [ActionServer] Aborting handle.
+[INFO] [1792915455.540341957] [behavior_server]: Running spin
+[INFO] [1792915455.540526677] [behavior_server]: Turning 1.57 for spin behavior.
+[INFO] [1792915457.340766195] [behavior_server]: spin completed successfully
+[WARN] [1792915457.371548404] [planner_server]: GridBased: failed to create plan with tolerance 0.50.
+[WARN] [1792915457.371884836] [planner_server]: Planning algorithm GridBased failed to generate a valid path to (0.99, -3.53)
+[WARN] [1792915457.371937690] [planner_server]: [compute_path_to_pose] [ActionServer] Aborting handle.
+[INFO] [1792915457.390016855] [global_costmap.global_costmap]: Received request to clear entirely the global_costmap
+[WARN] [1792915457.512742408] [planner_server]: GridBased: failed to create plan with tolerance 0.50.
+[WARN] [1792915457.512900375] [planner_server]: Planning algorithm GridBased failed to generate a valid path to (0.99, -3.53)
+[WARN] [1792915457.512933180] [planner_server]: [compute_path_to_pose] [ActionServer] Aborting handle.
+[INFO] [1792915457.529923367] [behavior_server]: Running wait
+[INFO] [1792915462.530386211] [behavior_server]: wait completed successfully
+[WARN] [1792915462.562345678] [planner_server]: GridBased: failed to create plan with tolerance 0.50.
+[WARN] [1792915462.562578091] [planner_server]: Planning algorithm GridBased failed to generate a valid path to (0.99, -3.53)
+[WARN] [1792915462.562608720] [planner_server]: [compute_path_to_pose] [ActionServer] Aborting handle.
+[INFO] [1792915462.579789118] [global_costmap.global_costmap]: Received request to clear entirely the global_costmap
+[WARN] [1792915463.522306984] [planner_server]: GridBased: failed to create plan with tolerance 0.50.
+[WARN] [1792915463.522445628] [planner_server]: Planning algorithm GridBased failed to generate a valid path to (0.99, -3.53)
+[WARN] [1792915463.522465824] [planner_server]: [compute_path_to_pose] [ActionServer] Aborting handle.
+[INFO] [1792915463.540001355] [behavior_server]: Running backup
+[INFO] [1792915465.429558131] [bt_navigator]: Received goal preemption request
+[INFO] [1792915465.430134158] [bt_navigator]: Begin navigating from current location (0.53, 0.05) to (0.13, -3.21)
+[INFO] [1792915469.740346834] [behavior_server]: backup completed successfully
+[WARN] [1792915469.770636881] [planner_server]: GridBased: failed to create plan with tolerance 0.50.
+[WARN] [1792915469.770747953] [planner_server]: Planning algorithm GridBased failed to generate a valid path to (0.13, -3.21)
+[WARN] [1792915469.770777801] [planner_server]: [compute_path_to_pose] [ActionServer] Aborting handle.
+[INFO] [1792915469.789864035] [global_costmap.global_costmap]: Received request to clear entirely the global_costmap
+[WARN] [1792915470.512342235] [planner_server]: GridBased: failed to create plan with tolerance 0.50.
+[WARN] [1792915470.512493103] [planner_server]: Planning algorithm GridBased failed to generate a valid path to (0.13, -3.21)
+[WARN] [1792915470.512523309] [planner_server]: [compute_path_to_pose] [ActionServer] Aborting handle.
+[INFO] [1792915470.530259475] [local_costmap.local_costmap]: Received request to clear entirely the local_costmap
+[INFO] [1792915470.531212279] [global_costmap.global_costmap]: Received request to clear entirely the global_costmap
+[WARN] [1792915471.513964757] [planner_server]: GridBased: failed to create plan with tolerance 0.50.
+[WARN] [1792915471.514159175] [planner_server]: Planning algorithm GridBased failed to generate a valid path to (0.13, -3.21)
+[WARN] [1792915471.514200540] [planner_server]: [compute_path_to_pose] [ActionServer] Aborting handle.
+[INFO] [1792915471.529517878] [global_costmap.global_costmap]: Received request to clear entirely the global_costmap
+[WARN] [1792915472.521330578] [planner_server]: GridBased: failed to create plan with tolerance 0.50.
+[WARN] [1792915472.521469671] [planner_server]: Planning algorithm GridBased failed to generate a valid path to (0.13, -3.21)
+[WARN] [1792915472.521492640] [planner_server]: [compute_path_to_pose] [ActionServer] Aborting handle.
+[WARN] [1792915472.549515095] [bt_navigator]: [navigate_to_pose] [ActionServer] Aborting handle.
+[ERROR] [1792915472.549924963] [bt_navigator]: Goal failed
+[INFO] [1792915479.177652114] [bt_navigator]: Begin navigating from current location (0.63, -0.11) to (3.54, 3.14)
+[WARN] [1792915479.179767044] [planner_server]: GridBased: failed to create plan with tolerance 0.50.
+[WARN] [1792915479.179978729] [planner_server]: Planning algorithm GridBased failed to generate a valid path to (3.54, 3.14)
+[WARN] [1792915479.180009266] [planner_server]: [compute_path_to_pose] [ActionServer] Aborting handle.
+[INFO] [1792915479.198021986] [global_costmap.global_costmap]: Received request to clear entirely the global_costmap
+[WARN] [1792915479.520131366] [planner_server]: GridBased: failed to create plan with tolerance 0.50.
+[WARN] [1792915479.520228267] [planner_server]: Planning algorithm GridBased failed to generate a valid path to (3.54, 3.14)
+[WARN] [1792915479.520244688] [planner_server]: [compute_path_to_pose] [ActionServer] Aborting handle.
+[INFO] [1792915479.538391976] [behavior_server]: Running spin
+[INFO] [1792915479.538496436] [behavior_server]: Turning 1.57 for spin behavior.
+[INFO] [1792915481.338715477] [behavior_server]: spin completed successfully
+[WARN] [1792915481.369172285] [planner_server]: GridBased: failed to create plan with tolerance 0.50.
+[WARN] [1792915481.369269149] [planner_server]: Planning algorithm GridBased failed to generate a valid path to (3.54, 3.14)
+[WARN] [1792915481.369281768] [planner_server]: [compute_path_to_pose] [ActionServer] Aborting handle.
+[INFO] [1792915481.388054759] [global_costmap.global_costmap]: Received request to clear entirely the global_costmap
+[WARN] [1792915481.520062129] [planner_server]: GridBased: failed to create plan with tolerance 0.50.
+[WARN] [1792915481.520182964] [planner_server]: Planning algorithm GridBased failed to generate a valid path to (3.54, 3.14)
+[WARN] [1792915481.520204005] [planner_server]: [compute_path_to_pose] [ActionServer] Aborting handle.
+[INFO] [1792915481.538985997] [behavior_server]: Running wait
+[INFO] [1792915486.568572065] [behavior_server]: wait completed successfully
+[WARN] [1792915486.598877229] [planner_server]: GridBased: failed to create plan with tolerance 0.50.
+[WARN] [1792915486.599010912] [planner_server]: Planning algorithm GridBased failed to generate a valid path to (3.54, 3.14)
+[WARN] [1792915486.599027196] [planner_server]: [compute_path_to_pose] [ActionServer] Aborting handle.
+[INFO] [1792915486.617491421] [global_costmap.global_costmap]: Received request to clear entirely the global_costmap
+[WARN] [1792915487.450179690] [planner_server]: GridBased: failed to create plan with tolerance 0.50.
+[WARN] [1792915487.450308387] [planner_server]: Planning algorithm GridBased failed to generate a valid path to (3.54, 3.14)
+[WARN] [1792915487.450325819] [planner_server]: [compute_path_to_pose] [ActionServer] Aborting handle.
+[INFO] [1792915487.468255597] [behavior_server]: Running backup
+[WARN] [1792915487.468653366] [behavior_server]: Collision Ahead - Exiting DriveOnHeading
+[WARN] [1792915487.468699966] [behavior_server]: backup failed
+[WARN] [1792915487.468714688] [behavior_server]: [backup] [ActionServer] Aborting handle.
+[INFO] [1792915487.497462192] [local_costmap.local_costmap]: Received request to clear entirely the local_costmap
+[INFO] [1792915487.497990332] [global_costmap.global_costmap]: Received request to clear entirely the global_costmap
+[WARN] [1792915488.450721943] [planner_server]: GridBased: failed to create plan with tolerance 0.50.
+[WARN] [1792915488.450909299] [planner_server]: Planning algorithm GridBased failed to generate a valid path to (3.54, 3.14)
+[WARN] [1792915488.450937925] [planner_server]: [compute_path_to_pose] [ActionServer] Aborting handle.
+[INFO] [1792915488.467286607] [global_costmap.global_costmap]: Received request to clear entirely the global_costmap
+[INFO] [1792915489.097392659] [bt_navigator]: Received goal preemption request
+[INFO] [1792915489.098093819] [bt_navigator]: Begin navigating from current location (0.64, -0.11) to (2.22, -3.29)
+[WARN] [1792915489.450057549] [planner_server]: GridBased: failed to create plan with tolerance 0.50.
+[WARN] [1792915489.450221393] [planner_server]: Planning algorithm GridBased failed to generate a valid path to (3.54, 3.14)
+[WARN] [1792915489.450282192] [planner_server]: [compute_path_to_pose] [ActionServer] Aborting handle.
+[INFO] [1792915489.467914850] [behavior_server]: Running spin
+[INFO] [1792915489.468106403] [behavior_server]: Turning 1.57 for spin behavior.
+[INFO] [1792915491.268419831] [behavior_server]: spin completed successfully
+[WARN] [1792915491.299221652] [planner_server]: GridBased: failed to create plan with tolerance 0.50.
+[WARN] [1792915491.299385938] [planner_server]: Planning algorithm GridBased failed to generate a valid path to (2.22, -3.29)
+[WARN] [1792915491.299412140] [planner_server]: [compute_path_to_pose] [ActionServer] Aborting handle.
+[INFO] [1792915491.317428015] [global_costmap.global_costmap]: Received request to clear entirely the global_costmap
+[WARN] [1792915491.450294040] [planner_server]: GridBased: failed to create plan with tolerance 0.50.
+[WARN] [1792915491.450469944] [planner_server]: Planning algorithm GridBased failed to generate a valid path to (2.22, -3.29)
+[WARN] [1792915491.450502685] [planner_server]: [compute_path_to_pose] [ActionServer] Aborting handle.
+[INFO] [1792915491.467642416] [behavior_server]: Running wait
+[INFO] [1792915496.467892368] [behavior_server]: wait completed successfully
+[WARN] [1792915496.498973308] [planner_server]: GridBased: failed to create plan with tolerance 0.50.
+[WARN] [1792915496.499106322] [planner_server]: Planning algorithm GridBased failed to generate a valid path to (2.22, -3.29)
+[WARN] [1792915496.499141029] [planner_server]: [compute_path_to_pose] [ActionServer] Aborting handle.
+[INFO] [1792915496.517537810] [global_costmap.global_costmap]: Received request to clear entirely the global_costmap
+[WARN] [1792915497.450267854] [planner_server]: GridBased: failed to create plan with tolerance 0.50.
+[WARN] [1792915497.450424002] [planner_server]: Planning algorithm GridBased failed to generate a valid path to (2.22, -3.29)
+[WARN] [1792915497.450459343] [planner_server]: [compute_path_to_pose] [ActionServer] Aborting handle.
+[INFO] [1792915497.468163694] [behavior_server]: Running backup
+[INFO] [1792915503.668669989] [behavior_server]: backup completed successfully
+[WARN] [1792915503.699346665] [planner_server]: GridBased: failed to create plan with tolerance 0.50.
+[WARN] [1792915503.699443649] [planner_server]: Planning algorithm GridBased failed to generate a valid path to (2.22, -3.29)
+[WARN] [1792915503.699455386] [planner_server]: [compute_path_to_pose] [ActionServer] Aborting handle.
+[INFO] [1792915503.717587587] [global_costmap.global_costmap]: Received request to clear entirely the global_costmap
+[WARN] [1792915504.449305332] [planner_server]: GridBased: failed to create plan with tolerance 0.50.
+[WARN] [1792915504.449403924] [planner_server]: Planning algorithm GridBased failed to generate a valid path to (2.22, -3.29)
+[WARN] [1792915504.449417883] [planner_server]: [compute_path_to_pose] [ActionServer] Aborting handle.
+[WARN] [1792915504.477168216] [bt_navigator]: [navigate_to_pose] [ActionServer] Aborting handle.
+[ERROR] [1792915504.477743526] [bt_navigator]: Goal failed
+[INFO] [1792915722.197900297] [rclcpp]: signal_handler(SIGINT/SIGTERM)
+[INFO] [1792915722.197976929] [waypoint_follower]: Running Nav2 LifecycleNode rcl preshutdown (waypoint_follower)
+[INFO] [1792915722.198093907] [waypoint_follower]: Deactivating
+[INFO] [1792915722.198119457] [waypoint_follower]: Destroying bond (waypoint_follower) to lifecycle manager.
+[INFO] [1792915722.208598180] [waypoint_follower]: Cleaning up
+[INFO] [1792915722.214185162] [waypoint_follower]: Destroying bond (waypoint_follower) to lifecycle manager.
+[INFO] [1792915722.214218032] [behavior_server]: Running Nav2 LifecycleNode rcl preshutdown (behavior_server)
+[INFO] [1792915722.214248900] [behavior_server]: Deactivating
+[INFO] [1792915722.214267663] [behavior_server]: Destroying bond (behavior_server) to lifecycle manager.
+[INFO] [1792915722.224574825] [behavior_server]: Cleaning up
+[INFO] [1792915722.228952592] [behavior_server]: Destroying bond (behavior_server) to lifecycle manager.
+[INFO] [1792915722.228981421] [lifecycle_manager_navigation]: Running Nav2 LifecycleManager rcl preshutdown (lifecycle_manager_navigation)
+[INFO] [1792915722.229010057] [lifecycle_manager_navigation]: [34m[1mTerminating bond timer...[0m[0m
+[INFO] [1792915722.325506423] [smoother_server]: Running Nav2 LifecycleNode rcl preshutdown (smoother_server)
+[INFO] [1792915722.325572153] [smoother_server]: Deactivating
+[INFO] [1792915722.325589484] [smoother_server]: Destroying bond (smoother_server) to lifecycle manager.
+[INFO] [1792915722.335722071] [smoother_server]: Cleaning up
+[INFO] [1792915722.345934373] [smoother_server]: Destroying bond (smoother_server) to lifecycle manager.
+[INFO] [1792915722.345966655] [velocity_smoother]: Running Nav2 LifecycleNode rcl preshutdown (velocity_smoother)
+[INFO] [1792915722.345999828] [velocity_smoother]: Deactivating
+[INFO] [1792915722.346021953] [velocity_smoother]: Destroying bond (velocity_smoother) to lifecycle manager.
+[INFO] [1792915722.356123589] [velocity_smoother]: Cleaning up
+[INFO] [1792915722.356164550] [velocity_smoother]: Destroying bond (velocity_smoother) to lifecycle manager.
+[INFO] [1792915722.356172531] [bt_navigator]: Running Nav2 LifecycleNode rcl preshutdown (bt_navigator)
+[INFO] [1792915722.356201535] [bt_navigator]: Deactivating
+[INFO] [1792915722.356220390] [bt_navigator]: Destroying bond (bt_navigator) to lifecycle manager.
+[INFO] [1792915722.366299946] [bt_navigator]: Cleaning up
+[INFO] [1792915722.449057903] [bt_navigator]: Completed Cleaning up
+[INFO] [1792915722.449101940] [bt_navigator]: Destroying bond (bt_navigator) to lifecycle manager.
+[INFO] [1792915722.449110169] [planner_server]: Running Nav2 LifecycleNode rcl preshutdown (planner_server)
+[INFO] [1792915722.449146915] [planner_server]: Deactivating
+[INFO] [1792915722.449173457] [global_costmap.global_costmap]: Deactivating
+[INFO] [1792915723.078124775] [planner_server]: Deactivating plugin GridBased of type NavfnPlanner
+[INFO] [1792915723.078233588] [planner_server]: Destroying bond (planner_server) to lifecycle manager.
+[INFO] [1792915723.088407152] [planner_server]: Cleaning up
+[INFO] [1792915723.097525267] [global_costmap.global_costmap]: Cleaning up
+[INFO] [1792915723.100342113] [planner_server]: Cleaning up plugin GridBased of type NavfnPlanner
+[INFO] [1792915723.100487167] [planner_server]: Destroying plugin GridBased of type NavfnPlanner
+[INFO] [1792915723.109754856] [planner_server]: Destroying bond (planner_server) to lifecycle manager.
+[INFO] [1792915723.109824554] [controller_server]: Running Nav2 LifecycleNode rcl preshutdown (controller_server)
+[INFO] [1792915723.109861088] [controller_server]: Deactivating
+[INFO] [1792915723.109900387] [local_costmap.local_costmap]: Deactivating
+[INFO] [1792915723.275046526] [controller_server]: Destroying bond (controller_server) to lifecycle manager.
+[INFO] [1792915723.285350107] [controller_server]: Cleaning up
+[INFO] [1792915723.286306466] [local_costmap.local_costmap]: Cleaning up
+[INFO] [1792915723.303342673] [controller_server]: Destroying bond (controller_server) to lifecycle manager.
+[INFO] [1792915723.303411204] [amcl]: Running Nav2 LifecycleNode rcl preshutdown (amcl)
+[INFO] [1792915723.303486670] [amcl]: Deactivating
+[INFO] [1792915723.303509768] [amcl]: Destroying bond (amcl) to lifecycle manager.
+[INFO] [1792915723.313718885] [amcl]: Cleaning up
+[INFO] [1792915723.318751479] [amcl]: Destroying bond (amcl) to lifecycle manager.
+[INFO] [1792915723.318814978] [lifecycle_manager_localization]: Running Nav2 LifecycleManager rcl preshutdown (lifecycle_manager_localization)
+[INFO] [1792915723.318843182] [lifecycle_manager_localization]: [34m[1mTerminating bond timer...[0m[0m
+[INFO] [1792915723.341983715] [map_server]: Running Nav2 LifecycleNode rcl preshutdown (map_server)
+[INFO] [1792915723.342084318] [map_server]: Deactivating
+[INFO] [1792915723.342103026] [map_server]: Destroying bond (map_server) to lifecycle manager.
+[INFO] [1792915723.352239592] [map_server]: Cleaning up
+[INFO] [1792915723.352374424] [map_server]: Destroying bond (map_server) to lifecycle manager.
