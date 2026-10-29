@@ -43,3 +43,30 @@ Here is how our invisible driver works:
 |     TurtleBot3        |                            |   Navigation2 (Nav2)   |
 |   (Waffle Platform)   | <------------------------- | (Global/Local Planner) |
 +-----------------------+      Path Optimization     +------------------------+
+
+```
+## Technology Stack & Environment
+Operating System: Windows 11 host running Ubuntu 22.04 LTS via WSL 2 
+Robotics Middleware: ROS 2 Humble Hawksbill
+Simulation Engine: Gazebo (Classic 3D physics environment)
+Navigation Framework: Navigation2 (Nav2) stack & SLAM Toolbox
+
+## Quick Setup Instructions
+If you want to run or review this simulation locally, follow these steps in your WSL Ubuntu terminal:
+
+1. Install Dependencies & ROS 2 Humble
+sudo apt update && sudo apt install ros-humble-desktop python3-colcon-common-extensions -y
+sudo apt install ros-humble-turtlebot3* ros-humble-nav2-bringup ros-humble-slam-toolbox -y
+
+2. Configure Environment Variables
+echo "export TURTLEBOT3_MODEL=waffle" >> ~/.bashrc
+echo "source /opt/ros/humble/setup.bash" >> ~/.bashrc
+source ~/.bashrc
+
+3.Run the Simulation (Terminal Window 1)
+ros2 launch turtlebot3_gazebo turtlebot3_world.launch.py
+
+4.Run the Navigation Stack (Terminal Window 2)
+ros2 launch turtlebot3_navigation2 navigation2.launch.py use_sim_time:=True
+
+Once RViz2 opens, click 2D Pose Estimate to calibrate the robot, followed by Nav2 Goal to command autonomous path planning!
