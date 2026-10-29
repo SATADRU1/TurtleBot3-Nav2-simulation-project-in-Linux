@@ -5,7 +5,7 @@
 
 ---
 
-## 🎥 Watch the Demo
+## Watch the Demo
 [![Watch the Demo Video](https://img.shields.io/badge/Google%20Drive-Demo%20Video-blue?style=for-the-badge&logo=googledrive)](https://drive.google.com/file/d/1FfoJU0E8e4qmr2G_Da9t4aOT_Bdk6W8s/view?usp=drive_link)
 
 *Click the badge above to watch the 1–2 minute screen recording demonstrating autonomous navigation in Gazebo and RViz2.*
@@ -29,7 +29,7 @@ Here is how our invisible driver works:
 
 ---
 
-## 🏗️ System Architecture & Data Flow
+##  System Architecture & Data Flow
 
 ```text
 +-----------------------+       LiDAR Scan Data      +------------------------+
@@ -61,7 +61,7 @@ Here is how our invisible driver works:
 | Mapping | SLAM Toolbox |
 | Build Tools | Colcon |
 
-## ✨ Key Capabilities
+##  Key Capabilities
 
 - Simulated TurtleBot3 robot in a 3D environment.
 - Map-based autonomous navigation using Nav2.
@@ -72,7 +72,7 @@ Here is how our invisible driver works:
 
 *Available functionality depends on the installed packages and active launch configuration.*
 
-## 📋 Prerequisites
+## Prerequisites
 
 - Windows 11 with WSL 2 enabled.
 - Ubuntu 22.04 LTS.
@@ -82,7 +82,7 @@ Here is how our invisible driver works:
 
 > **Compatibility:** This project targets Gazebo Classic, which has reached end of life. Package availability depends on the configured repositories and software environment.
 
-## 🚀 Installation and Setup
+## Installation and Setup
 
 ### 1. Update Ubuntu
 
@@ -120,7 +120,7 @@ Verify that ROS 2 is available:
 ros2 --help
 ```
 
-## ▶️ Running the Simulation
+##  Running the Simulation
 
 Use separate Ubuntu terminal windows for the simulator and navigation stack.
 
@@ -154,7 +154,7 @@ ros2 launch turtlebot3_navigation2 navigation2.launch.py \
 
 Ensure that the map YAML file and its referenced image exist before launching navigation.
 
-## 🧭 Using RViz2
+## Using RViz2
 
 1. Select **2D Pose Estimate** to initialize the robot's estimated position and orientation on the map.
 2. Select **Nav2 Goal** and choose a reachable destination.
@@ -163,7 +163,7 @@ Ensure that the map YAML file and its referenced image exist before launching na
 
 Successful navigation requires a valid map, working localization, correct coordinate transforms, active Nav2 nodes, and compatible sensor data.
 
-## 🗺️ Mapping with SLAM Toolbox
+## Mapping with SLAM Toolbox
 
 SLAM Toolbox is included as a dependency but is not launched by the simulation and navigation commands above.
 
@@ -177,7 +177,7 @@ To create a map:
 
 Mapping and navigation using a saved map are separate workflows.
 
-## 🐛 Troubleshooting
+## Troubleshooting
 
 | Issue | What to Check |
 |---|---|
@@ -187,7 +187,7 @@ Mapping and navigation using a saved map are separate workflows.
 | Robot does not move | Check the initial pose, localization, Nav2 status, and sensor topics. |
 | Robot pose or map appears incorrect | Check coordinate frames, transforms, and map compatibility. |
 
-## 📚 References
+## References
 
 - [ROS 2 Humble Documentation](https://docs.ros.org/en/humble/)
 - [TurtleBot3 Documentation](https://emanual.robotis.com/docs/en/platform/turtlebot3/overview/)
